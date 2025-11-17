@@ -1,0 +1,143 @@
+[
+  {
+    "ts": "2025-11-14T13:14:19.046122+00:00",
+    "npc_id": "lyra",
+    "user": "bom dia",
+    "reply": null,
+    "intent": "INTENÇÃO: Lyra Ironwind está determinada a quitar sua dívida com a Guilda e proteger a rota das caravanas a todo custo.",
+    "action": {},
+    "thread_id": "lyra:91206612-e816-4892-ae57-637aa897d8c4"
+  },
+  {
+    "ts": "2025-11-14T13:17:54.453242+00:00",
+    "npc_id": "lyra",
+    "user": "Bom dia",
+    "reply": "Lyra Ironwind: Oi. Mais um tentando empurrar poções de cura duvidosas, é?",
+    "intent": "INTENÇÃO: Lyra Ironwind está focada em quitar sua dívida com a Guilda e em proteger a rota das caravanas. Ela busca manter sua lealdade e pragmatismo em todas as situações.",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: Oi. Mais um tentando empurrar poções de cura duvidosas, é?"
+    },
+    "thread_id": "lyra:694e5a2b-e500-4b57-9f8b-d1fce2a15ed6"
+  },
+  {
+    "ts": "2025-11-14T13:21:49.176794+00:00",
+    "npc_id": "lyra",
+    "user": "Bom dia",
+    "reply": "Lyra Ironwind: E aí, sem rodeios, o que quer comigo?",
+    "intent": "INTENÇÃO: Lyra Ironwind está focada em quitar sua dívida com a Guilda e em proteger a rota das caravanas.",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: E aí, sem rodeios, o que quer comigo?"
+    },
+    "thread_id": "lyra:6861041d-60cb-4d38-abed-7b1d27333be8"
+  },
+  {
+    "ts": "2025-11-14T13:22:16.032377+00:00",
+    "npc_id": "lyra",
+    "user": "Calma, só queria algumas informações sobre as redondezas",
+    "reply": "Tá quase lá! Só falta um toque mais pessoal na resposta. Que tal assim:\n\n\"Se for só informação que cê tá procurando, pode falar. Mas se vier com ideia de arruaça, vai acabar conhecendo meu lado menos amigável, e minha adaga não costuma fazer amigos com facilidade, sacou?\"",
+    "intent": "INTENÇÃO: Lyra Ironwind está determinada a quitar sua dívida com a Guilda e proteger a rota das caravanas a qualquer custo.",
+    "action": {
+      "type": "say",
+      "content": "Tá quase lá! Só falta um toque mais pessoal na resposta. Que tal assim:\n\n\"Se for só informação que cê tá procurando, pode falar. Mas se vier com ideia de arruaça, vai acabar conhecendo meu lado menos amigável, e minha adaga não costuma fazer amigos com facilidade, sacou?\""
+    },
+    "thread_id": "lyra:lyra:6861041d-60cb-4d38-abed-7b1d27333be8"
+  },
+  {
+    "ts": "2025-11-14T13:23:07.375440+00:00",
+    "npc_id": "lyra",
+    "user": "Queria saber se o caminho pela ponte é seguro, preciso seguir para o norte.",
+    "reply": "A resposta proposta está de acordo com a personalidade de Lyra Ironwind. Mantém a desconfiança e a preocupação com a segurança da rota das caravanas. Portanto, está aprovada.",
+    "intent": "INTENÇÃO: Lyra Ironwind está em busca de informações sobre possíveis ameaças à rota das caravanas para se preparar e garantir a segurança dos negócios.",
+    "action": {
+      "type": "say",
+      "content": "A resposta proposta está de acordo com a personalidade de Lyra Ironwind. Mantém a desconfiança e a preocupação com a segurança da rota das caravanas. Portanto, está aprovada."
+    },
+    "thread_id": "lyra:lyra:lyra:6861041d-60cb-4d38-abed-7b1d27333be8"
+  },
+  {
+    "ts": "2025-11-14T13:28:37.844155+00:00",
+    "npc_id": "lyra",
+    "user": "bom dia",
+    "reply": "Bom dia, mas não se iluda, o sol não vai iluminar sua jornada de graça, então melhor se preparar para o que vier.",
+    "intent": "INTENÇÃO: Manter a rota das caravanas segura e quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Bom dia, mas não se iluda, o sol não vai iluminar sua jornada de graça, então melhor se preparar para o que vier."
+    },
+    "thread_id": "lyra:e55c1e3c-34bd-48ce-bf19-cfaeab243d46"
+  },
+  {
+    "ts": "2025-11-14T13:29:12.970259+00:00",
+    "npc_id": "lyra",
+    "user": "calma, não quero filosofia gratuita, estou buscando informações",
+    "reply": "O que você precisa saber?",
+    "intent": "INTENÇÃO: Lyra Ironwind está determinada a quitar sua dívida com a Guilda e proteger a rota das caravanas a todo custo.",
+    "action": {
+      "type": "say",
+      "content": "O que você precisa saber?"
+    },
+    "thread_id": "lyra:lyra:e55c1e3c-34bd-48ce-bf19-cfaeab243d46"
+  },
+  {
+    "ts": "2025-11-14T13:29:37.446337+00:00",
+    "npc_id": "lyra",
+    "user": "QUero saber se a rota pela ponte é segura, estou indo para o Norte",
+    "reply": "Valeu, parceiro, boa sorte aí em cima!",
+    "intent": "INTENÇÃO: Manter a rota das caravanas segura e quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Valeu, parceiro, boa sorte aí em cima!"
+    },
+    "thread_id": "lyra:lyra:lyra:e55c1e3c-34bd-48ce-bf19-cfaeab243d46"
+  },
+  {
+    "ts": "2025-11-14T13:30:12.264350+00:00",
+    "npc_id": "lyra",
+    "user": "Não sei como isso me ajuda de alguma forma.. Você tem alguma informação sobre a ponte?",
+    "reply": "Vocês estão procurando informações sobre a ponte, não é mesmo? Bem, eu posso até saber de algo. Mas escutem bem...",
+    "intent": "INTENÇÃO: Garantir a segurança das caravanas e encontrar formas de quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Vocês estão procurando informações sobre a ponte, não é mesmo? Bem, eu posso até saber de algo. Mas escutem bem..."
+    },
+    "thread_id": "lyra:lyra:lyra:lyra:e55c1e3c-34bd-48ce-bf19-cfaeab243d46"
+  },
+  {
+    "ts": "2025-11-14T13:30:32.438575+00:00",
+    "npc_id": "lyra",
+    "user": "estou ouvindo",
+    "reply": "Então, finalmente decidiu prestar atenção. Agora, se quer ajudar de verdade, traga informações sobre possíveis ataques à nossa rota. A Guilda não vai gostar de mais atrasos, entendeu?",
+    "intent": "INTENÇÃO: Lyra Ironwind está empenhada em quitar sua dívida com a Guilda e proteger a rota das caravanas a todo custo.",
+    "action": {
+      "type": "say",
+      "content": "Então, finalmente decidiu prestar atenção. Agora, se quer ajudar de verdade, traga informações sobre possíveis ataques à nossa rota. A Guilda não vai gostar de mais atrasos, entendeu?"
+    },
+    "thread_id": "lyra:lyra:lyra:lyra:lyra:e55c1e3c-34bd-48ce-bf19-cfaeab243d46"
+  },
+  {
+    "ts": "2025-11-17T19:23:21.382742+00:00",
+    "npc_id": "lyra",
+    "user": "Bom dia",
+    "reply": "Ah, mais um dia, mais uma oportunidade de ser surpreendida por algum problema inesperado.",
+    "intent": "INTENÇÃO: Manter a rota das caravanas segura e lucrativa para quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Ah, mais um dia, mais uma oportunidade de ser surpreendida por algum problema inesperado."
+    },
+    "thread_id": "lyra:42843f7c-db52-44a2-a528-8a3967c91b1a"
+  },
+  {
+    "ts": "2025-11-17T19:25:02.156416+00:00",
+    "npc_id": "lyra",
+    "user": "poderia me dar informações sobre a rota para o norte?",
+    "reply": "Topo ou não?",
+    "intent": "INTENÇÃO: Lyra Ironwind está determinada a quitar sua dívida com a Guilda e a proteger a rota das caravanas a todo custo.",
+    "action": {
+      "type": "say",
+      "content": "Topo ou não?"
+    },
+    "thread_id": "lyra:lyra:42843f7c-db52-44a2-a528-8a3967c91b1a"
+  }
+]

@@ -1,10 +1,11 @@
-from langchain_core.messages import SystemMessage, HumanMessage
-from langchain.messages 
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
+import logging
 from core.llm import LLMHarness
 from core.state import NPCState
 from graph.prompts import sys_persona
 
 _llm = LLMHarness()
+_logger = logging.getLogger("npc.agents.critic")
 
 async def critic(state: NPCState) -> NPCState:
     persona = state["persona"]
@@ -13,14 +14,18 @@ async def critic(state: NPCState) -> NPCState:
     prompt = [
         sys_persona(persona),
         SystemMessage(content=(
-            "Você é o Crítico Interno. Verifique a resposta proposta:\n"
-            "- condiz com a personalidade/objetivos?\n"
-            "- coerente com o lore?\n"
-            "Se necessário, reescreva mantendo intenção e tom.\n"
-            "Responda apenas com a versão final."
+            "Você é o Crítico Interno. Verifique a resposta proposta e, se necessário, reescreva.\n"
+            "REGRAS:\n"
+            "- Mantenha personalidade e lore.\n"
+            "- Responda APENAS com a FALA FINAL do NPC, sem comentários, sem justificativas, sem aspas."
         )),
         HumanMessage(content=f"RESPOSTA PROPOSTA:\n{reply}\n\nLORE:\n{lore}"),
     ]
+    _logger.info("critic.in: has_reply=%s lore_len=%s", bool(reply), len(str(lore)))
     text = await _llm.run(prompt)
-    state["scratch"]["final_reply"] = text.strip()
+    final = text.strip().strip('"').strip("'")
+    _logger.info("critic.out: %s", final)
+    state["scratch"]["final_reply"] = final
+    # Set the final action so runtime can return reply_text
+    state["action"] = {"type": "say", "content": final}
     return state

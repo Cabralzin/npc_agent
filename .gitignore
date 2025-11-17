@@ -1,0 +1,6 @@
+.env
+*secrets*
+*venv*
+.streamlit
+*.log
+*pycache*
