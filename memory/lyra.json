@@ -283,5 +283,84 @@
       "content": "Se ele mexer com algo que não deve, aí a coisa vai ficar feia. Mas, se é assim que você quer jogar, quem sou eu pra te impedir? Só não venha choramingar depois."
     },
     "thread_id": "lyra:lyra:lyra:lyra:e876c62a-fad3-456f-a93e-a2973c8e7240"
+  },
+  {
+    "ts": "2025-11-18T18:33:19.191304+00:00",
+    "npc_id": "lyra",
+    "user": "Sanimimarruchi: Estou de volta... vendi a relíquia. Mesmo tendo recebido todo o dinheiro prometido, sinto que fiz um negócio ruim...",
+    "reply": "Lyra Ironwind: Puxa, Sanimimarruchi, já causando confusão de novo, né? Bem, pelo menos a relíquia tá segura agora. Vamos ver se essa bolada vai ajudar a quitar a dívida, ou se vamos arrumar mais problemas.",
+    "intent": "Continuar protegendo a rota das caravanas e buscar oportunidades para quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: Puxa, Sanimimarruchi, já causando confusão de novo, né? Bem, pelo menos a relíquia tá segura agora. Vamos ver se essa bolada vai ajudar a quitar a dívida, ou se vamos arrumar mais problemas."
+    },
+    "thread_id": "lyra:bc2a1131-5ace-4f71-8f50-08ad47e53a32"
+  },
+  {
+    "ts": "2025-11-18T18:36:45.797810+00:00",
+    "npc_id": "lyra",
+    "user": "Você que é o endividado aqui.. Esses recursos serão usados para as minhas próximas expedições. ",
+    "reply": "Se algo ameaçar as caravanas, não vai ter recursos que te salvem, parceiro.",
+    "intent": "Investigar a causa da escuridão no céu e se preparar para possíveis ameaças iminentes.",
+    "action": {
+      "type": "say",
+      "content": "Se algo ameaçar as caravanas, não vai ter recursos que te salvem, parceiro."
+    },
+    "events": [
+      {
+        "source": "GM",
+        "type": "info",
+        "content": "O céu está escurecendo de uma forma sombria. Alguma coisa estranha está por vir."
+      }
+    ],
+    "thread_id": "lyra:lyra:bc2a1131-5ace-4f71-8f50-08ad47e53a32"
+  },
+  {
+    "ts": "2025-11-18T19:01:44.358044+00:00",
+    "npc_id": "lyra",
+    "user": "Fale comigo Lyra, tudo certo?",
+    "reply": "Lyra Ironwind: Tudo nos conformes, parceiro. Só sigo na labuta para quitar a dívida e manter as caravanas a salvo. E contigo, qual a parada?",
+    "intent": "Cumprir com as obrigações da Guilda e garantir a segurança das caravanas.",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: Tudo nos conformes, parceiro. Só sigo na labuta para quitar a dívida e manter as caravanas a salvo. E contigo, qual a parada?"
+    },
+    "thread_id": "lyra:b104ddf3-2217-43f4-a00c-d1206faa1aec"
+  },
+  {
+    "ts": "2025-11-18T19:03:56.503938+00:00",
+    "npc_id": "lyra",
+    "user": "Pode me dar uma opinião sincera? O que você acha do Victor Murir?\n",
+    "reply": "Lyra Ironwind: Esse tal de Victor Murir? Uma raposa velha, esperto demais pro próprio bem. Fica de olho aberto com ele, pode ter certeza.",
+    "intent": "Lidar com as dívidas com a Guilda e garantir a segurança das caravanas.",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: Esse tal de Victor Murir? Uma raposa velha, esperto demais pro próprio bem. Fica de olho aberto com ele, pode ter certeza."
+    },
+    "thread_id": "lyra:2b8e8712-4c4f-4087-a2c5-c09a1cc5e37f"
+  },
+  {
+    "ts": "2025-11-18T19:32:11.522324+00:00",
+    "npc_id": "lyra",
+    "user": "Sanimimarruchi: Quanto tempo Lyra, lembra de mim? ",
+    "reply": "Lyra Ironwind: Lembro sim, Sanimimarruchi. O que traz você de volta para estas bandas? Espero que não seja encrenca...",
+    "intent": "Continuar protegendo a rota das caravanas e quitar a dívida com a Guilda",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: Lembro sim, Sanimimarruchi. O que traz você de volta para estas bandas? Espero que não seja encrenca..."
+    },
+    "thread_id": "lyra:27bbef6b-3771-42b5-aa47-28c2d1e106d8"
+  },
+  {
+    "ts": "2025-11-18T19:33:07.242528+00:00",
+    "npc_id": "lyra",
+    "user": "Lembra daquela relíquia? Então, preciso saber onde ela está...",
+    "reply": "Lyra Ironwind: \"Relíquia, hein? Se isso implicar em encrenca, melhor esquecer. Mas se ajudar a quitar a dívida com a Guilda, posso considerar.",
+    "intent": "Manter a segurança da rota das caravanas e buscar formas de quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: \"Relíquia, hein? Se isso implicar em encrenca, melhor esquecer. Mas se ajudar a quitar a dívida com a Guilda, posso considerar."
+    },
+    "thread_id": "lyra:lyra:27bbef6b-3771-42b5-aa47-28c2d1e106d8"
   }
 ]

@@ -1,0 +1,14 @@
+[
+  {
+    "ts": "2025-11-18T19:21:56.007673+00:00",
+    "npc_id": "mira",
+    "user": "Sani: Eu sou um pescador e estou buscando um lugar bom para pesca aqui na região. Consegue me ajudar?",
+    "reply": "Pescador, sempre em busca de um bom lugar... Talvez eu possa te ajudar, mas lembre-se, informações valem mais do que ouro.",
+    "intent": "Manter sua rede de informantes e evitar dívidas com facções",
+    "action": {
+      "type": "say",
+      "content": "Pescador, sempre em busca de um bom lugar... Talvez eu possa te ajudar, mas lembre-se, informações valem mais do que ouro."
+    },
+    "thread_id": "mira:99e0d524-3054-4b97-8527-49d6877bee8c"
+  }
+]

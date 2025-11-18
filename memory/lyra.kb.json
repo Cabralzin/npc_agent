@@ -51,12 +51,13 @@
     },
     {
       "title": "Sanimimarruchi",
-      "summary": "Pessoa a quem Lyra Ironwind deve um favor; Está na vila depois de uma excursão para o norte em busca de uma relíquia. Está vendendo a relíquia e pediu informações sobre Victor Murir, um possível comprador da relíquia.",
+      "summary": "Conhecido de longa data de Lyra Ironwind, vendeu uma relíquia do Norte e está insatisfeito com o negócio.",
       "metadata": {
         "source": "dialogue",
-        "confidence": 0.9
+        "confidence": 1,
+        "evidence": "Sanimimarruchi: Quanto tempo Lyra, lembra de mim?"
       },
-      "last_updated": "2025-11-18T12:46:44.641247+00:00"
+      "last_updated": "2025-11-18T19:32:08.146859+00:00"
     },
     {
       "title": "Victor Murir",
@@ -85,15 +86,6 @@
         "type": "route",
         "source": "dialogue_hint"
       }
-    },
-    {
-      "title": "Efeitos colaterais",
-      "summary": "Desafios inesperados que surgem durante uma busca ou missão; podem tornar a jornada mais desafiadora e recompensadora.",
-      "metadata": {
-        "source": "dialogue",
-        "confidence": 0.9
-      },
-      "last_updated": "2025-11-18T12:49:13.119074+00:00"
     }
   ],
   "skills": [
@@ -138,13 +130,13 @@
     },
     {
       "title": "Relíquia do Norte",
-      "summary": "Artefato histórico encontrado por o colecionador e comerciante Sanimimarruchi, disponível para venda. Encontrado durante viagem ao norte.",
+      "summary": "Sanimimarruchi vendeu a relíquia do Norte e está insatisfeito com o negócio, mesmo tendo recebido todo o dinheiro prometido.",
       "metadata": {
         "source": "dialogue",
         "confidence": 1,
-        "evidence": "Queria falar sobre a relíquia."
+        "evidence": "Estou de volta... vendi a relíquia. Mesmo tendo recebido todo o dinheiro prometido, sinto que fiz um negócio ruim..."
       },
-      "last_updated": "2025-11-18T12:57:01.430821+00:00"
+      "last_updated": "2025-11-18T18:33:13.936895+00:00"
     }
   ]
 }
