@@ -6,7 +6,7 @@ from core.world_lore import WORLD_LORE
 
 _logger = logging.getLogger("npc.agents.world_model")
 async def world_model(state: NPCState) -> NPCState:
-    q = state["scratch"].get("event_summary", "")
+    q = state["scratch"].get("world_query") or state["scratch"].get("event_summary", "")
     _logger.info("world_model.in: has_query=%s", bool(q))
     if not q:
         return state

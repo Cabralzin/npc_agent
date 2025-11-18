@@ -12,7 +12,8 @@ async def dialogue(state: NPCState) -> NPCState:
     last_user = next((m for m in reversed(state["messages"]) if isinstance(m, HumanMessage)), None)
     user_text = last_user.content if last_user else "(sem fala do jogador)"
     intent = state.get("intent", "")
-    _logger.info("dialogue.in: has_intent=%s user_len=%s", bool(intent), len(str(user_text)))
+    lore = state["scratch"].get("lore_hits", "")
+    _logger.info("dialogue.in: has_intent=%s user_len=%s has_lore=%s", bool(intent), len(str(user_text)), bool(lore))
     prompt = [
         sys_persona(persona),
         SystemMessage(content=(
@@ -21,8 +22,12 @@ async def dialogue(state: NPCState) -> NPCState:
             "Respostas curtas, naturais para fala; evite listas."
         )),
         HumanMessage(content=f"INTENÇÃO: {state.get('intent','(n/a)')}"),
-        HumanMessage(content=f"DERRADEIRA FALA DO JOGADOR: {user_text}"),
     ]
+    if lore:
+        prompt.append(HumanMessage(content=f"INFORMAÇÕES DE MUNDO RELEVANTES:\n{lore}"))
+    prompt.extend([
+        HumanMessage(content=f"DERRADEIRA FALA DO JOGADOR: {user_text}"),
+    ])
     text = await _llm.run(prompt)
     state["scratch"]["candidate_reply"] = text.strip()
     _logger.info("dialogue.out: candidate_len=%s", len(state["scratch"]["candidate_reply"]))
