@@ -1,8 +1,12 @@
 from typing import Dict
+import logging
 from core.state import NPCState
+
+_logger = logging.getLogger("npc.agents.perception")
 
 async def perception(state: NPCState) -> NPCState:
     events = state.get("events", [])
+    _logger.info("perception.in: events=%s", len(events))
     if not events:
         return state
     summary = "; ".join(
@@ -10,4 +14,5 @@ async def perception(state: NPCState) -> NPCState:
     )
     state["scratch"]["event_summary"] = summary
     state["events"] = []
+    _logger.info("perception.out: summary_len=%s", len(summary))
     return state
