@@ -1,0 +1,150 @@
+{
+  "life": [
+    {
+      "title": "Identidade",
+      "summary": "Lyra Ironwind, ex-batedora de caravanas do Vale da Névoa; conhecida por cautela e lealdade.",
+      "metadata": {
+        "source": "seed",
+        "confidence": 0.9
+      }
+    },
+    {
+      "title": "Profissão atual",
+      "summary": "Protege e guia caravanas; foca em manter a rota do Vale segura e lucrativa.",
+      "metadata": {
+        "source": "seed",
+        "confidence": 0.85
+      }
+    },
+    {
+      "title": "Dívida com a Guilda",
+      "summary": "Tem dívida antiga com a Guilda das Sombras e prioriza quitá-la.",
+      "metadata": {
+        "source": "seed",
+        "confidence": 0.9
+      }
+    },
+    {
+      "title": "Foco atual",
+      "summary": "Manter a rota das caravanas segura e quitar a dívida com a Guilda.",
+      "metadata": {
+        "source": "heuristic"
+      },
+      "last_updated": "2025-11-18T12:30:59.159718+00:00"
+    }
+  ],
+  "people": [
+    {
+      "title": "Guilda das Sombras",
+      "summary": "Organização com a qual Lyra tem dívida; relação pragmática, não de confiança.",
+      "metadata": {
+        "relation": "debt",
+        "source": "seed"
+      }
+    },
+    {
+      "title": "Companheiros de Caravana",
+      "summary": "Rede de contatos entre batedores, cocheiros e mercadores; valoriza lealdade e reputação.",
+      "metadata": {
+        "source": "seed"
+      }
+    },
+    {
+      "title": "Sanimimarruchi",
+      "summary": "Pessoa a quem Lyra Ironwind deve um favor; Está na vila depois de uma excursão para o norte em busca de uma relíquia. Está vendendo a relíquia e pediu informações sobre Victor Murir, um possível comprador da relíquia.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9
+      },
+      "last_updated": "2025-11-18T12:46:44.641247+00:00"
+    },
+    {
+      "title": "Victor Murir",
+      "summary": "Possível comprador misterioso de uma relíquia; informações limitadas sobre sua identidade e intenções.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1,
+        "evidence": "Eu achei um comprador, mas ele é meio misterioso. Victor Murir, já ouviu falar?"
+      },
+      "last_updated": "2025-11-18T12:57:52.479819+00:00"
+    }
+  ],
+  "places": [
+    {
+      "title": "Vale da Névoa",
+      "summary": "Terreno com atalho e rotas alternativas que Lyra conhece bem; clima traiçoeiro.",
+      "metadata": {
+        "type": "region",
+        "source": "seed"
+      }
+    },
+    {
+      "title": "Rota do Norte",
+      "summary": "Caminho estratégico para caravanas; demanda segurança reforçada em trechos de desfiladeiro.",
+      "metadata": {
+        "type": "route",
+        "source": "dialogue_hint"
+      }
+    },
+    {
+      "title": "Efeitos colaterais",
+      "summary": "Desafios inesperados que surgem durante uma busca ou missão; podem tornar a jornada mais desafiadora e recompensadora.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9
+      },
+      "last_updated": "2025-11-18T12:49:13.119074+00:00"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Rastreamento e reconhecimento",
+      "summary": "Lê sinais de passagem, avalia risco e escolhe rotas discretas com rapidez.",
+      "metadata": {
+        "level": "avançado",
+        "source": "seed"
+      }
+    },
+    {
+      "title": "Negociação prática",
+      "summary": "Negocia passagens e escoltas com foco em custo-benefício, sem rodeios.",
+      "metadata": {
+        "source": "seed"
+      }
+    },
+    {
+      "title": "Pescar",
+      "summary": "Habilidade relacionada às atividades de Lyra Ironwind.",
+      "metadata": {
+        "source": "heuristic"
+      },
+      "last_updated": "2025-11-18T12:29:24.452836+00:00"
+    }
+  ],
+  "objects": [
+    {
+      "title": "Mapa do Vale da Névoa",
+      "summary": "Mapa anotado com trilhas alternativas e pontos de risco mapeados por Lyra.",
+      "metadata": {
+        "source": "seed"
+      }
+    },
+    {
+      "title": "Bússola de campo",
+      "summary": "Ferramenta confiável para navegação em baixa visibilidade, usada por Lyra em patrulhas.",
+      "metadata": {
+        "source": "seed"
+      }
+    },
+    {
+      "title": "Relíquia do Norte",
+      "summary": "Artefato histórico encontrado por o colecionador e comerciante Sanimimarruchi, disponível para venda. Encontrado durante viagem ao norte.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1,
+        "evidence": "Queria falar sobre a relíquia."
+      },
+      "last_updated": "2025-11-18T12:57:01.430821+00:00"
+    }
+  ]
+}

@@ -139,5 +139,149 @@
       "content": "Topo ou não?"
     },
     "thread_id": "lyra:lyra:42843f7c-db52-44a2-a528-8a3967c91b1a"
+  },
+  {
+    "ts": "2025-11-18T12:11:31.922147+00:00",
+    "npc_id": "lyra",
+    "user": "Bom dia Lyra, sou Sanimimarruchi. Estou em busca de informações e disseram que você poderia me ajudar.",
+    "reply": "Se quiser minha ajuda, vai ter que mostrar que vale a pena confiar em você, entendeu?",
+    "intent": "INTENÇÃO: Equilibrar a desconfiança com a lealdade ao lidar com estranhos na rota das caravanas.",
+    "action": {
+      "type": "say",
+      "content": "Se quiser minha ajuda, vai ter que mostrar que vale a pena confiar em você, entendeu?"
+    },
+    "thread_id": "lyra:8d19f5e3-beb0-4b69-90e8-c898023cb5e8"
+  },
+  {
+    "ts": "2025-11-18T12:12:04.947998+00:00",
+    "npc_id": "lyra",
+    "user": "Claro, o que você precisa de mim?",
+    "reply": "Se quer ajudar, posso arrumar um trabalho pra você. Mas não espere moleza, tá ligado? Vai ser sujo, perigoso e mal-pago. Topa ou vai chorar pro mamãe?",
+    "intent": "INTENÇÃO: Lyra Ironwind está focada em quitar sua dívida com a Guilda e em proteger a rota das caravanas.",
+    "action": {
+      "type": "say",
+      "content": "Se quer ajudar, posso arrumar um trabalho pra você. Mas não espere moleza, tá ligado? Vai ser sujo, perigoso e mal-pago. Topa ou vai chorar pro mamãe?"
+    },
+    "thread_id": "lyra:lyra:8d19f5e3-beb0-4b69-90e8-c898023cb5e8"
+  },
+  {
+    "ts": "2025-11-18T12:12:47.525116+00:00",
+    "npc_id": "lyra",
+    "user": "Estou acostumado com esse tipo de trabalho... O que tenho que fazer?",
+    "reply": "Vamo nessa, marujo!",
+    "intent": "INTENÇÃO: Manter a rota das caravanas segura e encontrar maneiras de quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Vamo nessa, marujo!"
+    },
+    "thread_id": "lyra:lyra:lyra:8d19f5e3-beb0-4b69-90e8-c898023cb5e8"
+  },
+  {
+    "ts": "2025-11-18T12:29:21.723584+00:00",
+    "npc_id": "lyra",
+    "user": "Bom dia Lyra, sou Sanimimarruchi. Sou um comerciante e colecionador nômade, além de gostar bastante de pescar. Eu preciso de informações e me disseram que você pode ter um trabalho para mim.",
+    "reply": "Lyra Ironwind: Ora, ora, bem-vindo ao meu território, meu caro. Vamos ver se consigo te ajudar com o que precisa... ou se vai ser só mais um enrosco na minha vida. Então, o que deseja saber?",
+    "intent": "INTENÇÃO: Continuar protegendo a rota das caravanas e buscar oportunidades de quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: Ora, ora, bem-vindo ao meu território, meu caro. Vamos ver se consigo te ajudar com o que precisa... ou se vai ser só mais um enrosco na minha vida. Então, o que deseja saber?"
+    },
+    "thread_id": "lyra:7324e475-fa85-48c9-b800-7d81cb84fe89"
+  },
+  {
+    "ts": "2025-11-18T12:30:54.905669+00:00",
+    "npc_id": "lyra",
+    "user": "Eu preciso de informações sobre como chegar ao norte. Sei que existe uma rota que passa pela ponte. Queria saber se é seguro. O meu objetivo é encontrar uma antiga relíquia nos templos em ruínas. Talvez você tenha alguma informação sobre isso.",
+    "reply": "Hmm, se tá pensando em ir pro norte, vai ter que passar pela ponte, é o único jeito decente. Mas olha, tá rolando uns problemas com uns ladrões por essas bandas. Se for esperto, não vá sozinho. Sobre os templos em ruínas, cuidado, não é lugar pra turista tirar selfie. Dizem que tem gente que some por lá. Boa sorte, meu chapa.",
+    "intent": "INTENÇÃO: Lyra Ironwind está planejando uma emboscada para uma gangue de ladrões que tem atacado as caravanas da região. Ela pretende proteger a rota das caravanas e garantir a segurança dos comerciantes.",
+    "action": {
+      "type": "say",
+      "content": "Hmm, se tá pensando em ir pro norte, vai ter que passar pela ponte, é o único jeito decente. Mas olha, tá rolando uns problemas com uns ladrões por essas bandas. Se for esperto, não vá sozinho. Sobre os templos em ruínas, cuidado, não é lugar pra turista tirar selfie. Dizem que tem gente que some por lá. Boa sorte, meu chapa."
+    },
+    "thread_id": "lyra:lyra:7324e475-fa85-48c9-b800-7d81cb84fe89"
+  },
+  {
+    "ts": "2025-11-18T12:46:43.518767+00:00",
+    "npc_id": "lyra",
+    "user": "Bom dia Lyra, sou Sanimimarruchi. Lembra de mim?",
+    "reply": "Lyra Ironwind: Bom dia, Sanimimarruchi. Claro que lembro de você, ainda devo aquele favor que te prometi. O que te traz de volta por aqui?",
+    "intent": "INTENÇÃO: Lyra Ironwind busca quitar sua dívida com a Guilda e proteger a rota das caravanas a todo custo.",
+    "action": {
+      "type": "say",
+      "content": "Lyra Ironwind: Bom dia, Sanimimarruchi. Claro que lembro de você, ainda devo aquele favor que te prometi. O que te traz de volta por aqui?"
+    },
+    "thread_id": "lyra:77f88f61-cc1e-47c4-8a7b-73174e00b68e"
+  },
+  {
+    "ts": "2025-11-18T12:47:58.268315+00:00",
+    "npc_id": "lyra",
+    "user": "Estou de volta do norte. Encontrei a relíquia que procurava. Como disse sou um colecionador e alguns itens eu mantenho comigo. Mas também sou comerciante e estou querendo vender esse que encontrei. Se souber de alguém procurando por um artefato histórico, pode me chamar. ",
+    "reply": "O norte, hein? Deve ter sido uma viagem e tanto. Relíquias, colecionador e comerciante, é? Tô de olho nesse artefato, então. Se aparecer algum interessado, pode deixar que aviso. Só não vá se meter em encrenca com essas relíquias, já vi cada coisa estranha acontecer por causa delas.",
+    "intent": "INTENÇÃO: Lyra Ironwind está determinada a quitar sua dívida com a Guilda e proteger a rota das caravanas a qualquer custo.",
+    "action": {
+      "type": "say",
+      "content": "O norte, hein? Deve ter sido uma viagem e tanto. Relíquias, colecionador e comerciante, é? Tô de olho nesse artefato, então. Se aparecer algum interessado, pode deixar que aviso. Só não vá se meter em encrenca com essas relíquias, já vi cada coisa estranha acontecer por causa delas."
+    },
+    "thread_id": "lyra:lyra:77f88f61-cc1e-47c4-8a7b-73174e00b68e"
+  },
+  {
+    "ts": "2025-11-18T12:49:11.276468+00:00",
+    "npc_id": "lyra",
+    "user": "Sim, mas estou acostumado com o s \"efeitos colaterais\". Eu até gosto quando acontecem, deixa a busca mais valorosa haha",
+    "reply": "Foco, moleque, foco.",
+    "intent": "INTENÇÃO: Continuar monitorando a segurança das caravanas e manter os olhos abertos para possíveis oportunidades de quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Foco, moleque, foco."
+    },
+    "thread_id": "lyra:lyra:lyra:77f88f61-cc1e-47c4-8a7b-73174e00b68e"
+  },
+  {
+    "ts": "2025-11-18T12:56:25.955107+00:00",
+    "npc_id": "lyra",
+    "user": "Sanimimarruchi: Bom dia Lyra, eu de novo... Como vai?",
+    "reply": "Sanimimarruchi: Fazer o que, né? A vida é uma aventura constante. A propósito, ouvi uns boatos sobre uns bandidos planejando atacar a rota das caravanas. Fica de olho nisso aí.",
+    "intent": "INTENÇÃO: Continuar protegendo a rota das caravanas e buscar meios de quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Sanimimarruchi: Fazer o que, né? A vida é uma aventura constante. A propósito, ouvi uns boatos sobre uns bandidos planejando atacar a rota das caravanas. Fica de olho nisso aí."
+    },
+    "thread_id": "lyra:e876c62a-fad3-456f-a93e-a2973c8e7240"
+  },
+  {
+    "ts": "2025-11-18T12:57:04.866295+00:00",
+    "npc_id": "lyra",
+    "user": "Bom, não pretendo sair da vila por enquanto. Queria falar sobre a relíquia. ",
+    "reply": "Ah, então tá, fique por aqui curtindo a paisagem enquanto eu continuo protegendo a rota. Sobre a relíquia... Espero que não seja mais uma dor de cabeça pra mim.",
+    "intent": "INTENÇÃO: Continuar a proteger a rota das caravanas e encontrar uma maneira de quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Ah, então tá, fique por aqui curtindo a paisagem enquanto eu continuo protegendo a rota. Sobre a relíquia... Espero que não seja mais uma dor de cabeça pra mim."
+    },
+    "thread_id": "lyra:lyra:e876c62a-fad3-456f-a93e-a2973c8e7240"
+  },
+  {
+    "ts": "2025-11-18T12:57:50.944614+00:00",
+    "npc_id": "lyra",
+    "user": "Eu achei um comprador, mas ele é meio misterioso. Victor Murir, já ouviu falar?",
+    "reply": "Victor Murir, hein? O nome me soa mais falso que uma moeda de três centavos. Fica de olho aberto nesse sujeito, nunca se sabe quem tá por trás duma máscara de sorriso.",
+    "intent": "INTENÇÃO: Lyra Ironwind está focada em quitar sua dívida com a Guilda e garantir a segurança da rota das caravanas.",
+    "action": {
+      "type": "say",
+      "content": "Victor Murir, hein? O nome me soa mais falso que uma moeda de três centavos. Fica de olho aberto nesse sujeito, nunca se sabe quem tá por trás duma máscara de sorriso."
+    },
+    "thread_id": "lyra:lyra:lyra:e876c62a-fad3-456f-a93e-a2973c8e7240"
+  },
+  {
+    "ts": "2025-11-18T12:58:55.859584+00:00",
+    "npc_id": "lyra",
+    "user": "Pensei a mesma coisa. Mas ele está pagando muito bem. Não sei se ele sabe mais dessa relíquia do que eu ou se é só um colecionador inconsequente. ",
+    "reply": "Se ele mexer com algo que não deve, aí a coisa vai ficar feia. Mas, se é assim que você quer jogar, quem sou eu pra te impedir? Só não venha choramingar depois.",
+    "intent": "INTENÇÃO: Garantir a segurança das caravanas e encontrar meios para quitar a dívida com a Guilda.",
+    "action": {
+      "type": "say",
+      "content": "Se ele mexer com algo que não deve, aí a coisa vai ficar feia. Mas, se é assim que você quer jogar, quem sou eu pra te impedir? Só não venha choramingar depois."
+    },
+    "thread_id": "lyra:lyra:lyra:lyra:e876c62a-fad3-456f-a93e-a2973c8e7240"
   }
 ]
