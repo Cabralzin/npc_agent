@@ -1,0 +1,14 @@
+[
+  {
+    "ts": "2025-11-19T17:11:47.339879+00:00",
+    "npc_id": "kira",
+    "user": "Kira, preciso do ultimo mapa de rosewood que você fez, vou sair com a Raven para pegar peças do carro",
+    "reply": "Claro, vou te mostrar o mapa! Boa sorte na busca, e não se esqueça de sorrir, a vida é uma aventura, amigo!",
+    "intent": "Manter o moral do grupo mesmo diante de desafios",
+    "action": {
+      "type": "say",
+      "content": "Claro, vou te mostrar o mapa! Boa sorte na busca, e não se esqueça de sorrir, a vida é uma aventura, amigo!"
+    },
+    "thread_id": "kira:a0921150-8acd-4304-8aa7-af697bd44a32"
+  }
+]

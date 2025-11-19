@@ -1,0 +1,110 @@
+{
+  "life": [],
+  "people": [
+    {
+      "title": "Coronel",
+      "summary": "Líder militar da região, responsável por missões de resgate e suprimentos",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "o coronel pediu que encontrassemos o maior número de antibitoticos e bandagens"
+      },
+      "last_updated": "2025-11-19T14:43:54.829387+00:00"
+    },
+    {
+      "title": "Rosewood",
+      "summary": "Destino da próxima missão de limpeza do quartel de bombeiros perto da prisão, a ser realizada em conjunto no dia seguinte",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "devemos sair juntos amanhã de manhã para irmos para rosewood, vamos limpar o quartel de bombeiros perto da prisão"
+      },
+      "last_updated": "2025-11-19T16:59:02.406139+00:00"
+    },
+    {
+      "title": "Raven",
+      "summary": "Companheira de missão de equipamentos e viagem a Rosewood, recebeu mapa da região de Kira",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Ezra vou sair com a Raven para pegar equipamentos e ir ate rosewood, a Kira ja me deu um mapa da região"
+      },
+      "last_updated": "2025-11-19T17:21:42.774455+00:00"
+    },
+    {
+      "title": "Kira",
+      "summary": "Forneceu mapa da região para a missão de equipamentos e viagem a Rosewood",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Ezra vou sair com a Raven para pegar equipamentos e ir ate rosewood, a Kira ja me deu um mapa da região"
+      },
+      "last_updated": "2025-11-19T17:21:42.777553+00:00"
+    }
+  ],
+  "places": [
+    {
+      "title": "Quartel de bombeiros perto da prisão",
+      "summary": "Local a ser limpo em missão conjunta com destino a Rosewood, agendada para o dia seguinte",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "devemos sair juntos amanhã de manhã para irmos para rosewood, vamos limpar o quartel de bombeiros perto da prisão"
+      },
+      "last_updated": "2025-11-19T16:59:02.409121+00:00"
+    }
+  ],
+  "skills": [],
+  "objects": [
+    {
+      "title": "Antibióticos e bandagens",
+      "summary": "Itens essenciais para tratamento de ferimentos e infecções, prioritários em missões de resgate",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "o coronel pediu que encontrassemos o maior número de antibitoticos e bandagens"
+      },
+      "last_updated": "2025-11-19T14:43:54.831864+00:00"
+    },
+    {
+      "title": "Amoxicilina, Ciprofloxacino e Claritromicina",
+      "summary": "Antibióticos encontrados por Erza, recomendados para tratamento de sobreviventes conforme necessidade e doses apropriadas",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "Encontrei amoxicilina, ciprofloxacino e claritromicina. Recomendo doses apropriadas baseadas nas condições médicas dos sobreviventes."
+      },
+      "last_updated": "2025-11-19T15:04:48.451797+00:00"
+    },
+    {
+      "title": "Doses apropriadas de antibióticos",
+      "summary": "Ezra recomenda doses apropriadas de amoxicilina, ciprofloxacino e claritromicina baseadas nas condições médicas dos sobreviventes afetados.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "dos antibioticos que você trouxe, qual a dose posso usar caso um dos sobreviventes pegue algo ?"
+      },
+      "last_updated": "2025-11-19T16:41:04.586291+00:00"
+    },
+    {
+      "title": "Transporte de antibióticos para emergências",
+      "summary": "Ezra considera importante que pessoas que saiam da zona segura carreguem alguns antibióticos para emergências, mesmo em quantidades limitadas, mantendo a dosagem recomendada conforme possível.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "acha interessante quem sair da zona segura carregar alguns por emergencia ?"
+      },
+      "last_updated": "2025-11-19T16:45:20.518677+00:00"
+    },
+    {
+      "title": "Analgésicos, antibióticos, curativos e água esterilizada",
+      "summary": "Mantimentos médicos essenciais para uma jornada de duas semanas, incluindo kit de primeiros socorros completo.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Ezra vou sair com a Raven para pegar equipamentos e ir ate rosewood, a Kira ja me deu um mapa da região, preciso saber oque devo levar de mantimentos médicos para 2 semanas"
+      },
+      "last_updated": "2025-11-19T17:35:55.540335+00:00"
+    }
+  ]
+}

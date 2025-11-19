@@ -114,11 +114,26 @@ class NPCGraph:
                 
         # Invoke the graph
         result = await self.app.ainvoke(state, config=config)
-        self.logger.info(f"[tid={tid}] graph executed; intent={result.get('intent')} scratch_keys={list((result.get('scratch') or {}).keys())}")
+        scratch = result.get("scratch", {}) or {}
+        
+        # Prepara action para log (remove áudio binário se existir)
+        action_for_log = result.get("action")
+        if action_for_log and isinstance(action_for_log, dict):
+            action_for_log = dict(action_for_log)
+            if "audio" in action_for_log:
+                action_for_log["audio"] = f"<bytes: {len(action_for_log['audio'])} bytes>"
+        
+        self.logger.info(
+            f"[tid={tid}] graph executed; intent={result.get('intent')} "
+            f"scratch_keys={list(scratch.keys())} "
+            f"action={action_for_log} "
+            f"final_reply={scratch.get('final_reply')}"
+        )
 
-        action = result.get("action") or {}
+        action = result.get("action")
         reply_text = None
-        if action.get("type") == "tool":
+        
+        if action and action.get("type") == "tool":
             tool = TOOLS_REGISTRY.get(action.get("name"))
             say = action.get("fallback_say", "")
             if tool:
@@ -131,23 +146,39 @@ class NPCGraph:
                 action = {"type": "say", "content": say or "(falha de ferramenta)"}
                 reply_text = action["content"]
         else:
-            reply_text = (action or {}).get("content")
+            # Tenta pegar do action primeiro (definido pelo critic)
+            if action and isinstance(action, dict) and action.get("content"):
+                reply_text = action.get("content")
+            
+            # Se não encontrou no action, tenta do scratch como fallback
             if not reply_text:
-                scratch = result.get("scratch", {}) or {}
                 fallback = scratch.get("final_reply") or scratch.get("candidate_reply")
                 if fallback:
                     reply_text = fallback
-                    action = {"type": "say", "content": fallback}
+                    # Garante que o action tenha o conteúdo correto
+                    if not action or not isinstance(action, dict):
+                        action = {"type": "say", "content": fallback}
+                    else:
+                        action["content"] = fallback
+                        action["type"] = "say"
+                else:
+                    # Se ainda não encontrou, cria action vazio para não quebrar
+                    action = action or {"type": "say", "content": ""}
 
-        self.logger.info(f"[tid={tid}] action={action} reply={reply_text}")
+        self.logger.info(f"[tid={tid}] reply={reply_text}")
 
         # Persist minimal, readable memory per interaction
         try:
+            # Não tentar serializar bytes de áudio no JSON de memória
+            action_for_store = dict(action) if isinstance(action, dict) else action
+            if isinstance(action_for_store, dict):
+                action_for_store.pop("audio", None)
+
             record = self.store.minimal_record(
                 user_text=user_text,
                 reply_text=reply_text,
                 intent=result.get("intent"),
-                action=action,
+                action=action_for_store,
                 events=events,
                 extras={"thread_id": tid},
             )
@@ -163,7 +194,12 @@ class NPCGraph:
 
         result["messages"] = EpisodicMemory().reduce(result.get("messages", []))
         await self.app.ainvoke(result, config={"configurable": {"thread_id": tid}})
-        return {"thread_id": tid, "action": action, "reply_text": reply_text}
+        return {
+            "thread_id": tid,
+            "action": action,
+            "reply_text": reply_text,
+            "audio": action.get("audio") if isinstance(action, dict) else None,
+        }
 
     async def _auto_memorize(self, *, user_text: str, reply_text: str, events: List[Dict[str, Any]], messages: List[Any]) -> None:
         """Usa LLM para detectar NOVAS ou ATUALIZADAS memórias e persistir no KB.
@@ -275,5 +311,3 @@ class NPCGraph:
                     self.logger.info(f"auto_memorize: +KB [{cat}] '{title}'")
                 except Exception:
                     continue
-
-    

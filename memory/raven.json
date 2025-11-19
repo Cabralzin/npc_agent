@@ -1,0 +1,14 @@
+[
+  {
+    "ts": "2025-11-19T17:01:15.756910+00:00",
+    "npc_id": "raven",
+    "user": "Raven precisamos encontrar rodas novas para o carro que achamos na estrada, por onde você acha que vamos encontrar",
+    "reply": "Os galpões de West Point são o lugar certo pra achar essas peças raras. Bora nessa, não dá pra ficar enrolando.",
+    "intent": "Procurar por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Os galpões de West Point são o lugar certo pra achar essas peças raras. Bora nessa, não dá pra ficar enrolando."
+    },
+    "thread_id": "raven:2ca0aa4b-5d9a-42e4-a9ee-cbaa39266689"
+  }
+]

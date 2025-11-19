@@ -12,5 +12,5 @@ async def personality(state: NPCState) -> NPCState:
     if "ajuda" in summary.lower():
         emotions["empatia"] = min(1.0, emotions.get("empatia", 0.2) + 0.2)
     state["emotions"] = emotions
-    _logger.info("personality.out: emotions=%s", ", ".join(f"{k}:{v:.2f}" for k,v in emotions.items()) or "(none)")
+    _logger.info("personality.out: emotions=%s\n", ", ".join(f"{k}:{v:.2f}" for k,v in emotions.items()) or "(none)")
     return state

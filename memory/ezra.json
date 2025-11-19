@@ -1,0 +1,122 @@
+[
+  {
+    "ts": "2025-11-19T14:43:59.001040+00:00",
+    "npc_id": "ezra",
+    "user": "Erza, na ulma saída que fizemos o coronel pediu que encontrassemos o maior número de antibitoticos e bandagens que pudessemos carregar, você encontrou algum ?",
+    "reply": "Sim, encontrei alguns antibióticos e bandagens durante nossa última incursão. Vamos garantir que sejam armazenados corretamente para uso futuro.",
+    "intent": "Continuar ajudando os sobreviventes a se manterem saudáveis e seguros.",
+    "action": {
+      "type": "say",
+      "content": "Sim, encontrei alguns antibióticos e bandagens durante nossa última incursão. Vamos garantir que sejam armazenados corretamente para uso futuro."
+    },
+    "thread_id": "ezra:2f5f59d7-5d49-4fa4-8fc2-c6d53e0780bc"
+  },
+  {
+    "ts": "2025-11-19T15:04:46.297902+00:00",
+    "npc_id": "ezra",
+    "user": "Coronel: Erza, quais foram os antibióticos que você encontrou ? preciso saber em quais situações e doses devo entregar para os sobreviventes\n",
+    "reply": "Encontrei amoxicilina, ciprofloxacino e claritromicina. Recomendo doses apropriadas baseadas nas condições médicas dos sobreviventes.",
+    "intent": "Analisar os suprimentos médicos disponíveis e planejar como distribuí-los de forma equitativa entre os sobreviventes.",
+    "action": {
+      "type": "say",
+      "content": "Encontrei amoxicilina, ciprofloxacino e claritromicina. Recomendo doses apropriadas baseadas nas condições médicas dos sobreviventes."
+    },
+    "thread_id": "ezra:3a4a2bfd-0721-485a-979e-ac47a3905113"
+  },
+  {
+    "ts": "2025-11-19T16:41:14.219301+00:00",
+    "npc_id": "ezra",
+    "user": "Ezra dos antibioticos que você trouxe, qual a dose posso usar caso um dos sobreviventes pegue algo ?",
+    "reply": "Com base na condição do paciente, sugiro começar com a dose padrão de 500mg a cada 8 horas. Se surgirem reações adversas, diminua a dosagem e mantenha um monitoramento próximo.",
+    "intent": "Avaliar a disponibilidade de medicamentos raros na região.",
+    "action": {
+      "type": "say",
+      "content": "Com base na condição do paciente, sugiro começar com a dose padrão de 500mg a cada 8 horas. Se surgirem reações adversas, diminua a dosagem e mantenha um monitoramento próximo."
+    },
+    "thread_id": "ezra:ae78bb00-ea3f-4a65-8deb-c9d804ee005a"
+  },
+  {
+    "ts": "2025-11-19T16:46:17.989738+00:00",
+    "npc_id": "ezra",
+    "user": "mas e em casos onde temos pouco ? mantemos essa dosagem ? acha interessante quem sair da zona segura carregar alguns por emergencia ?\n",
+    "reply": "Manter os suprimentos médicos organizados é crucial. Devemos garantir que tenhamos o necessário para emergências, sem exageros que possam causar problemas logísticos.",
+    "intent": "Verificar se os suprimentos médicos estão organizados e prontos para serem utilizados.",
+    "action": {
+      "type": "say",
+      "content": "Manter os suprimentos médicos organizados é crucial. Devemos garantir que tenhamos o necessário para emergências, sem exageros que possam causar problemas logísticos."
+    },
+    "thread_id": "ezra:d6f4d43b-40e9-4c4d-adb2-74501bcfd0c7"
+  },
+  {
+    "ts": "2025-11-19T16:49:09.977106+00:00",
+    "npc_id": "ezra",
+    "user": "sim entendo que precisamos manter um estoque para emergencias, mas quem for explorar a procura de mais mantimentos podem ficar isolados por dias, caso alguem se machuque e tenha um infecção podemos perder um sobrevivente",
+    "reply": "Entendo suas preocupações. Equilibrar a busca por medicamentos com a segurança dos sobreviventes é essencial. Vamos planejar com cuidado e manter as linhas de comunicação abertas para garantir o bem-estar de todos.",
+    "intent": "Avaliar a disponibilidade de medicamentos na região.",
+    "action": {
+      "type": "say",
+      "content": "Entendo suas preocupações. Equilibrar a busca por medicamentos com a segurança dos sobreviventes é essencial. Vamos planejar com cuidado e manter as linhas de comunicação abertas para garantir o bem-estar de todos."
+    },
+    "thread_id": "ezra:ezra:d6f4d43b-40e9-4c4d-adb2-74501bcfd0c7"
+  },
+  {
+    "ts": "2025-11-19T16:52:27.373585+00:00",
+    "npc_id": "ezra",
+    "user": "quando vai ser sua proxima saída ?",
+    "reply": "Nossa próxima saída está marcada para amanhã de manhã. Vamos verificar os suprimentos médicos disponíveis juntos?",
+    "intent": "Analisar os suprimentos médicos disponíveis.",
+    "action": {
+      "type": "say",
+      "content": "Nossa próxima saída está marcada para amanhã de manhã. Vamos verificar os suprimentos médicos disponíveis juntos?"
+    },
+    "thread_id": "ezra:ezra:ezra:d6f4d43b-40e9-4c4d-adb2-74501bcfd0c7"
+  },
+  {
+    "ts": "2025-11-19T16:59:09.923352+00:00",
+    "npc_id": "ezra",
+    "user": "devemos sair juntos amanã de manhã para irmos para rosewood, vamos limpar o quartel de bombeiros perto da prisão",
+    "reply": "Podemos verificar os suprimentos médicos no caminho. Será importante garantir que tenhamos o necessário para emergências.",
+    "intent": "Avaliar a disponibilidade de recursos médicos na região.",
+    "action": {
+      "type": "say",
+      "content": "Podemos verificar os suprimentos médicos no caminho. Será importante garantir que tenhamos o necessário para emergências."
+    },
+    "thread_id": "ezra:ezra:ezra:ezra:d6f4d43b-40e9-4c4d-adb2-74501bcfd0c7"
+  },
+  {
+    "ts": "2025-11-19T17:21:51.234551+00:00",
+    "npc_id": "ezra",
+    "user": "Ezra vou sair com a Raven para pegar equipamentos e ir ate rosewood, a Kira ja me deu um mapa da região, preciso saber oque devo levar de mantimentos médicos para 2 semanas ",
+    "reply": "Não se esqueça de verificar as datas de validade dos medicamentos.",
+    "intent": "Avaliar a disponibilidade de medicamentos nos arredores.",
+    "action": {
+      "type": "say",
+      "content": "Não se esqueça de verificar as datas de validade dos medicamentos."
+    },
+    "thread_id": "ezra:17080146-9792-4085-ab3c-290ce49a7138"
+  },
+  {
+    "ts": "2025-11-19T17:35:50.816524+00:00",
+    "npc_id": "ezra",
+    "user": "Ezra vou sair com a Raven para pegar equipamentos e ir ate rosewood, a Kira ja me deu um mapa da região, preciso saber oque devo levar de mantimentos médicos para 2 semanas",
+    "reply": "Para uma jornada de duas semanas, é importante levar analgésicos, antibióticos, curativos e água esterilizada. Não se esqueça de um kit de primeiros socorros completo.",
+    "intent": "Manter os sobreviventes saudáveis e encontrar medicamentos raros.",
+    "action": {
+      "type": "say",
+      "content": "Para uma jornada de duas semanas, é importante levar analgésicos, antibióticos, curativos e água esterilizada. Não se esqueça de um kit de primeiros socorros completo."
+    },
+    "thread_id": "ezra:9ea07e4c-7d49-4e16-a865-1993f50fdfe0"
+  },
+  {
+    "ts": "2025-11-19T17:51:59.032570+00:00",
+    "npc_id": "ezra",
+    "user": "Ezra um dos sobreviventes que você ajudou semana passada aparentemente gosta muito de estocagem, ele fez um estoque de todos os itens que encontramos na ultima procura, a que durou 3 semanas lembra ? ta aqui a lista:\n\nParacetamol 500 mg, 6 cartelas fechadas (total 72 comprimidos), validade 11/2025; Paracetamol 750 mg, 14 comprimidos avulsos, validade 02/2025; Ibuprofeno 400 mg, 3 caixas completas (60 comprimidos), validade 03/2026; Ibuprofeno 200 mg, 22 comprimidos soltos, validade 09/2024 (levemente vencido); Dipirona gotas 500 mg/ml, 3 frascos lacrados de 20 ml, validade 07/2025; Dipirona comprimidos 1 g, 18 unidades, validade 12/2024; Amoxicilina 500 mg cápsulas, 2 caixas abertas somando 39 cápsulas, validade 08/2025; Cefalexina 500 mg, 1 caixa fechada (16 cápsulas), validade 04/2024; Claritromicina 500 mg, 6 comprimidos avulsos, validade 01/2025; Soro fisiológico 0,9% em frascos de 500 ml, 9 unidades (6 íntegros, 3 parcialmente usados), validade 05/2025; Clorexidina solução 2%, 3 frascos de 100 ml, validade 10/2026; Água oxigenada 10V, 4 frascos de 100 ml, validade 03/2024; Álcool 70% líquido, 5 frascos de 1 L (2 abertos), validade 09/2025; Pomada antibiótica tópica (bacitracina + neomicina), 7 bisnagas de 15 g, validade 06/2026; Antiemético metoclopramida 10 mg, 28 comprimidos, validade 07/2025; Antiácido mastigável, 42 comprimidos, validade 12/2025; Antialérgico loratadina 10 mg, 24 comprimidos, validade 01/2026; Difenidramina 25 mg, 38 cápsulas, validade 11/2024; Gazes estéreis 7,5 x 7,5 cm, cerca de 140 unidades com embalagens íntegras, validade variando entre 2024 e 2026; Ataduras de crepe e elásticas, aproximadamente 30 rolos, sem data de validade; Bandagens triangulares, 10 unidades, sem validade; Esparadrapo hipoalergênico, 8 rolos; Seringas estéreis de 3 ml, 5 ml e 10 ml, total 120 unidades, validade técnica 2027; Agulhas hipodérmicas estéreis, cerca de 180 unidades, validade 2026; Termômetros digitais, 3 funcionando; Tesouras e pinças diversas, 6 peças no total; Máscaras cirúrgicas, cerca de 110 unidades; Luvas de procedimento (látex), 4 caixas parcialmente usadas, cerca de 90 pares totais.",
+    "reply": "Vamos verificar cada item, garantindo sua utilidade futura. Juntos, organizaremos tudo com segurança.",
+    "intent": "Verificar os suprimentos médicos disponíveis.",
+    "action": {
+      "type": "say",
+      "content": "Vamos verificar cada item, garantindo sua utilidade futura. Juntos, organizaremos tudo com segurança."
+    },
+    "thread_id": "ezra:43b3fc05-2dfb-4567-a1e1-df42b80b1443"
+  }
+]

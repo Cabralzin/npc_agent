@@ -15,5 +15,5 @@ async def world_model(state: NPCState) -> NPCState:
     mem = SemanticMemory(lore_docs=WORLD_LORE)
     lore = recall_fact.run(q, mem=mem)  # type: ignore
     state["scratch"]["lore_hits"] = lore
-    _logger.info("world_model.out: lore_len=%s", len(str(lore)))
+    _logger.info("world_model.out: lore_len=%s\n", len(str(lore)))
     return state

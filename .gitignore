@@ -4,3 +4,4 @@
 .streamlit
 *.log
 *pycache*
+.flake8

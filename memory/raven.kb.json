@@ -1,0 +1,29 @@
+{
+  "life": [],
+  "people": [],
+  "places": [
+    {
+      "title": "Galpões de West Point",
+      "summary": "Local onde Raven acredita ser possível encontrar peças raras, incluindo rodas novas para o carro",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "por onde você acha que vamos encontrar"
+      },
+      "last_updated": "2025-11-19T17:01:17.147060+00:00"
+    }
+  ],
+  "skills": [],
+  "objects": [
+    {
+      "title": "Roda nova para o carro",
+      "summary": "Raven está em busca de rodas novas para o carro encontrado na estrada",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "Raven precisamos encontrar rodas novas para o carro que achamos na estrada"
+      },
+      "last_updated": "2025-11-19T17:01:06.467578+00:00"
+    }
+  ]
+}

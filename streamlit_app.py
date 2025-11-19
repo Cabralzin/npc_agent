@@ -89,6 +89,10 @@ if "pending_events" not in st.session_state:
     # Buffer de eventos a serem percebidos pelo NPC no próximo turno
     st.session_state.pending_events: List[Dict[str, str]] = []
 
+# >>> novo: guardar o último áudio gerado pelo NPC para tocar na UI
+if "last_audio" not in st.session_state:
+    st.session_state.last_audio = None
+
 
 st.set_page_config(page_title="NPC Agent", page_icon="🧙", layout="wide")
 st.title("NPC Agent UI")
@@ -257,6 +261,11 @@ with col_left:
     msgs_html.append("</div>")
     st.markdown("\n".join(msgs_html), unsafe_allow_html=True)
 
+    # >>> bloco para tocar o último áudio gerado pelo NPC
+    if st.session_state.last_audio:
+        st.markdown("**Última fala em áudio:**")
+        st.audio(st.session_state.last_audio, format="audio/mp3")
+
     # Parte 2: compositor (altura fixa)
     with st.form("composer_form", clear_on_submit=True):
         st.markdown('<div class="composer-box">', unsafe_allow_html=True)
@@ -292,6 +301,11 @@ with col_left:
             result = run_async(get_reply())
             st.session_state.thread_id = result.get("thread_id", st.session_state.thread_id)
             reply_text = result.get("reply_text") or (result.get("action") or {}).get("content") or "(sem resposta)"
+
+            # >>> captura o áudio vindo do NPCGraph/NPCManager
+            audio_bytes = result.get("audio") or (result.get("action") or {}).get("audio")
+            st.session_state.last_audio = audio_bytes
+
         except Exception as e:
             reply_text = f"Erro ao obter resposta: {e}"
 
@@ -310,6 +324,7 @@ with col_right:
     if st.button("Limpar chat e thread"):
         st.session_state.chat = []
         st.session_state.thread_id = None
+        st.session_state.last_audio = None  # >>> limpar áudio também
         st.rerun()
 
     st.divider()
