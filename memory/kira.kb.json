@@ -1,6 +1,17 @@
 {
   "life": [],
-  "people": [],
+  "people": [
+    {
+      "title": "Ezra",
+      "summary": "Membro do grupo responsável pelos medicamentos em missões",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "fale com a Ezra sobre quais medicamentos nós vamos poder levar nessa missão a Rosewood"
+      },
+      "last_updated": "2025-11-28T01:23:59.944097+00:00"
+    }
+  ],
   "places": [
     {
       "title": "Rosewood",

@@ -71,6 +71,48 @@ def build_voice_instructions(persona: Persona) -> str:
     return " ".join(parts)
 
 
+def transcribe_audio(audio_bytes: bytes, language: str = "pt") -> str:
+    """
+    Transcreve áudio para texto usando a API Whisper da OpenAI.
+    
+    Args:
+        audio_bytes: Bytes do arquivo de áudio (formato: wav, mp3, m4a, etc.)
+        language: Código do idioma (padrão: "pt" para português)
+    
+    Returns:
+        Texto transcrito do áudio
+    """
+    import io
+    import logging
+    
+    logger = logging.getLogger("npc.core.voice")
+    
+    if not audio_bytes:
+        raise ValueError("audio_bytes está vazio")
+    
+    logger.info(f"Transcrevendo áudio: {len(audio_bytes)} bytes, idioma={language}")
+    
+    # Cria um arquivo temporário em memória
+    audio_file = io.BytesIO(audio_bytes)
+    audio_file.name = "audio.wav"  # Whisper detecta o formato automaticamente
+    
+    try:
+        # Usa a API de transcrição da OpenAI
+        transcript = _client.audio.transcriptions.create(
+            model="whisper-1",
+            file=audio_file,
+            language=language,
+        )
+        text = transcript.text.strip()
+        logger.info(f"Transcrição concluída: {text[:50]}...")
+        return text
+    except Exception as e:
+        logger.error(f"Erro ao transcrever áudio: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        raise
+
+
 def synthesize_npc_voice_bytes(text: str, persona: Persona) -> bytes:
     """
     Gera áudio em memória (bytes) para a fala do NPC usando a API de voz da OpenAI.

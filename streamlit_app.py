@@ -9,6 +9,7 @@ from core.persona import Persona, DEFAULT_PERSONA
 from core.personas import PERSONAS
 from core.json_memory import JSONMemoryStore
 from core.npc_manager import NPCManager
+from core.voice import transcribe_audio
 
 # Optional: allow overriding world lore used by world_model at runtime
 # We will try to load from data/world_lore.json and patch both modules' variables
@@ -93,6 +94,14 @@ if "pending_events" not in st.session_state:
 # >>> novo: guardar o último áudio gerado pelo NPC para tocar na UI
 if "last_audio" not in st.session_state:
     st.session_state.last_audio = None
+
+# >>> modo de entrada (texto ou áudio)
+if "input_mode" not in st.session_state:
+    st.session_state.input_mode = "text"  # "text" ou "audio"
+
+# >>> texto transcrito do áudio (para processar após transcrição)
+if "transcribed_text" not in st.session_state:
+    st.session_state.transcribed_text = None
 
 
 st.set_page_config(
@@ -601,26 +610,93 @@ with col_left:
         )
 
     # Parte 2: compositor (altura fixa)
-    with st.form("composer_form", clear_on_submit=True):
-        st.markdown('<div class="composer-box">', unsafe_allow_html=True)
-        user_input = st.text_area(
-            "Mensagem", 
-            key="composer_text", 
-            placeholder="Digite sua mensagem aqui... (Enter para enviar, Shift+Enter para quebrar linha)", 
-            height=80, 
-            label_visibility="collapsed"
-        )
-        c1, c2 = st.columns([1, 5])
-        with c1:
-            send = st.form_submit_button("📤 Enviar", use_container_width=True)
-        with c2:
-            st.markdown(
-                '<span class="hint">💡 Dica: Enter para enviar | Shift+Enter para quebrar linha</span>', 
-                unsafe_allow_html=True
+    # Toggle entre modo texto e áudio
+    col_mode1, col_mode2 = st.columns([1, 1])
+    with col_mode1:
+        if st.button("⌨️ Modo Texto", use_container_width=True, 
+                     type="primary" if st.session_state.input_mode == "text" else "secondary",
+                     key="btn_text_mode"):
+            st.session_state.input_mode = "text"
+            st.rerun()
+    with col_mode2:
+        if st.button("🎤 Modo Áudio", use_container_width=True,
+                     type="primary" if st.session_state.input_mode == "audio" else "secondary",
+                     key="btn_audio_mode"):
+            st.session_state.input_mode = "audio"
+            st.rerun()
+    
+    # Form apenas para modo texto
+    if st.session_state.input_mode == "text":
+        with st.form("composer_form", clear_on_submit=True):
+            st.markdown('<div class="composer-box">', unsafe_allow_html=True)
+            user_input = st.text_area(
+                "Mensagem", 
+                key="composer_text", 
+                placeholder="Digite sua mensagem aqui... (Enter para enviar, Shift+Enter para quebrar linha)", 
+                height=80, 
+                label_visibility="collapsed"
             )
-        st.markdown('</div>', unsafe_allow_html=True)
+            c1, c2 = st.columns([1, 5])
+            with c1:
+                send = st.form_submit_button("📤 Enviar", use_container_width=True)
+            with c2:
+                st.markdown(
+                    '<span class="hint">💡 Dica: Enter para enviar | Shift+Enter para quebrar linha</span>', 
+                    unsafe_allow_html=True
+                )
+            st.markdown('</div>', unsafe_allow_html=True)
+    else:
+        # Modo áudio - não usa form
+        user_input = None
+        send = False
 
     st.markdown('</div>', unsafe_allow_html=True)
+
+    # Processa modo áudio fora do form
+    if st.session_state.input_mode == "audio":
+        audio_input = st.audio_input(
+            "Grave sua mensagem",
+            key="audio_input_outer"
+        )
+        
+        if audio_input:
+            st.audio(audio_input, format="audio/wav")
+            
+            if st.button("🎙️ Transcrever e Enviar", use_container_width=True, key="btn_transcribe_outer"):
+                try:
+                    st.info("🔄 Lendo áudio...")
+                    # Lê os bytes do áudio
+                    audio_bytes = audio_input.read()
+                    
+                    if not audio_bytes:
+                        st.error("❌ Erro: Áudio vazio ou não pôde ser lido.")
+                    else:
+                        st.info(f"✅ Áudio lido: {len(audio_bytes)} bytes")
+                        # Transcreve o áudio
+                        with st.spinner("🔄 Enviando para API de transcrição..."):
+                            transcribed = transcribe_audio(audio_bytes, language="pt")
+                            if transcribed:
+                                # Armazena no session_state para processar
+                                st.session_state.transcribed_text = transcribed
+                                st.success(f"✅ Transcrito: {transcribed}")
+                                # Força rerun para processar o texto transcrito
+                                st.rerun()
+                            else:
+                                st.warning("⚠️ Transcrição retornou texto vazio.")
+                except Exception as e:
+                    st.error(f"❌ Erro ao transcrever: {e}")
+                    import traceback
+                    st.error(f"```\n{traceback.format_exc()}\n```")
+
+    # Processa texto transcrito do áudio se houver
+    if st.session_state.transcribed_text:
+        user_input = st.session_state.transcribed_text
+        send = True
+        # Limpa o texto transcrito para não processar novamente
+        st.session_state.transcribed_text = None
+    elif st.session_state.input_mode == "text" and not user_input:
+        user_input = None
+        send = False
 
     if user_input and send:
         # Append user message
@@ -689,8 +765,11 @@ with col_right:
         ev_source = st.text_input("Fonte", value="GM", placeholder="Ex: GM, Sistema, etc.")
         ev_type = st.selectbox("Tipo", ["info", "danger", "opportunity", "social", "environmental"], index=0)
         ev_content = st.text_area("Conteúdo", height=100, placeholder="Descreva o evento...")
-        add_ev = st.form_submit_button("➕ Adicionar Evento", use_container_width=True)
-        if add_ev:
+        # Botão de submit - deve ser a última coisa no form
+        submitted = st.form_submit_button("➕ Adicionar Evento", use_container_width=True)
+        
+        # Processa dentro do form para ter acesso às variáveis
+        if submitted:
             if ev_content.strip():
                 st.session_state.pending_events.append({
                     "source": ev_source.strip() or "GM",

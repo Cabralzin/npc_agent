@@ -58,5 +58,17 @@
       "content": "Ah, rapaz, sei bem o que cê tá falando! A entrada de cima de Rosewood é top! Vou dar um jeito de mapear essa rota direitinho, pode deixar comigo!"
     },
     "thread_id": "kira:08a3ed0f-11b2-41d1-806c-9d8a276a7268"
+  },
+  {
+    "ts": "2025-11-28T01:23:58.540760+00:00",
+    "npc_id": "kira",
+    "user": "Kira, eu preciso que você fale com a Ezra sobre quais medicamentos nós vamos poder levar nessa missão a Rosewood.",
+    "reply": "Claro, mano! Vou achar a Ezra logo e dar um jeito nessa parada dos remédios, pode deixar!",
+    "intent": "Procurar por novas rotas seguras entre Muldraugh e West Point.",
+    "action": {
+      "type": "say",
+      "content": "Claro, mano! Vou achar a Ezra logo e dar um jeito nessa parada dos remédios, pode deixar!"
+    },
+    "thread_id": "kira:dcdb761f-e7ac-4438-b5f9-e81ee520f4ac"
   }
 ]
