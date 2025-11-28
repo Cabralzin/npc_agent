@@ -34,5 +34,53 @@
       "content": "Antes de sair caçando peças raras, vou dar uma olhada no motor, nas rodas e na lataria. Não quero que meu veículo vire sucata no meio do caminho."
     },
     "thread_id": "raven:3199197b-5320-4bd0-88ac-ebbf06249364"
+  },
+  {
+    "ts": "2025-11-28T02:20:22.020608+00:00",
+    "npc_id": "raven",
+    "user": "Raven, eu precisava do seu input em relação ao carro que nós vamos usar para descer para Rosewood. A gente não tem um jeep, eu precisava de algum modelo de carro que fosse bem silencioso para conseguir andar e passar despercebido, pelo menos na maior parte do tempo.",
+    "reply": "Um carro silencioso, né? Vou ter que fazer uns ajustes nesse aqui. Mas não espera milagres, essas sucatas fazem mais barulho que zumbis famintos.",
+    "intent": "Procurar por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Um carro silencioso, né? Vou ter que fazer uns ajustes nesse aqui. Mas não espera milagres, essas sucatas fazem mais barulho que zumbis famintos."
+    },
+    "thread_id": "raven:9a3329c1-a5c0-4d28-9279-4824e79c138e"
+  },
+  {
+    "ts": "2025-11-28T02:21:26.526620+00:00",
+    "npc_id": "raven",
+    "user": "Tá, você não precisa mexer com o seu próprio carro. Quais carros você tem disponíveis que eu posso usar pra poder descer? Eu preciso de um carro de apenas dois lugares. Vai estar indo pra Rosewood, eu e a Kira. A Ezra não vai descer com a gente.",
+    "reply": "Tenho um buggy velho lá nos galpões. Pode ser útil. Vou dar uma olhada nele e te encontrar na saída de West Point.",
+    "intent": "Procurar por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Tenho um buggy velho lá nos galpões. Pode ser útil. Vou dar uma olhada nele e te encontrar na saída de West Point."
+    },
+    "thread_id": "raven:raven:9a3329c1-a5c0-4d28-9279-4824e79c138e"
+  },
+  {
+    "ts": "2025-11-28T02:21:29.916094+00:00",
+    "npc_id": "raven",
+    "user": "Tá, você não precisa mexer com o seu próprio carro. Quais carros você tem disponíveis que eu posso usar pra poder descer? Eu preciso de um carro de apenas dois lugares. Vai estar indo pra Rosewood, eu e a Kira. A Ezra não vai descer com a gente.",
+    "reply": "Bem, tenho um buggy modificado, ótimo pra duplas. Mas já aviso, não é de graça, sacou? Vai ter que desembolsar ou arranjar um jeito de retribuir a ajuda.",
+    "intent": "Planejar a próxima expedição para encontrar peças raras em West Point.",
+    "action": {
+      "type": "say",
+      "content": "Bem, tenho um buggy modificado, ótimo pra duplas. Mas já aviso, não é de graça, sacou? Vai ter que desembolsar ou arranjar um jeito de retribuir a ajuda."
+    },
+    "thread_id": "raven:raven:9a3329c1-a5c0-4d28-9279-4824e79c138e"
+  },
+  {
+    "ts": "2025-11-28T14:20:59.956892+00:00",
+    "npc_id": "raven",
+    "user": "Raven, ontem quando eu falei com você sobre a gente usar um jeep pra descer para o Rosewood eu falei que eu precisava de um carro mais silencioso, mas eu to pensando que a gente vai precisar de um carro mais blindado mas a gente não tem um jeep, qual você iria sugerir?",
+    "reply": "Se quiser um veículo mais blindado, vamos precisar de algo resistente. Aquele caminhão militar abandonado ali nos galpões de West Point talvez dê conta do recado.",
+    "intent": "Procurar por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Se quiser um veículo mais blindado, vamos precisar de algo resistente. Aquele caminhão militar abandonado ali nos galpões de West Point talvez dê conta do recado."
+    },
+    "thread_id": "raven:a7d47037-87dd-4974-a1d4-d7ea00d5db6c"
   }
 ]

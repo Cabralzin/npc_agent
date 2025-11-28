@@ -25,13 +25,13 @@
   "places": [
     {
       "title": "Galpões de West Point",
-      "summary": "Local onde Raven acredita ser possível encontrar peças raras, incluindo rodas novas para o carro",
+      "summary": "Local onde Raven tem um buggy velho disponível para emprestar a Kira e seguir para Rosewood",
       "metadata": {
         "source": "dialogue",
         "confidence": 0.9,
-        "evidence": "por onde você acha que vamos encontrar"
+        "evidence": "Tenho um buggy velho lá nos galpões"
       },
-      "last_updated": "2025-11-19T17:01:17.147060+00:00"
+      "last_updated": "2025-11-28T02:21:28.236017+00:00"
     },
     {
       "title": "Garagem do posto de polícia de Rosewood",
@@ -42,6 +42,36 @@
         "evidence": "devemos encontrar peças para o carro na garagem do posto de policia da cidade"
       },
       "last_updated": "2025-11-19T19:28:58.517882+00:00"
+    },
+    {
+      "title": "Saída de West Point",
+      "summary": "Ponto de encontro de Raven e Kira para pegar um buggy de dois lugares nos galpões",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "Vou te encontrar na saída de West Point"
+      },
+      "last_updated": "2025-11-28T02:21:28.232743+00:00"
+    },
+    {
+      "title": "Rosewood",
+      "summary": "Destino para onde Raven e Kira vão com o buggy de dois lugares",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "Vai estar indo pra Rosewood, eu e a Kira"
+      },
+      "last_updated": "2025-11-28T02:21:28.238164+00:00"
+    },
+    {
+      "title": "Caminhão militar abandonado nos galpões de West Point",
+      "summary": "Possível opção de veículo mais resistente e blindado para a jornada até Rosewood",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "Aquele caminhão militar abandonado ali nos galpões de West Point talvez dê conta do recado."
+      },
+      "last_updated": "2025-11-28T14:21:01.868610+00:00"
     }
   ],
   "skills": [],

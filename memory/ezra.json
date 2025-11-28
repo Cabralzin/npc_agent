@@ -130,5 +130,29 @@
       "content": "Temos uma quantidade limitada de medicamentos raros, é crucial procurar mais antes que expirem."
     },
     "thread_id": "ezra:2e2c97f0-bcd5-40bd-ba43-a9f20e5803fe"
+  },
+  {
+    "ts": "2025-11-28T01:56:03.169232+00:00",
+    "npc_id": "ezra",
+    "user": "Ezra, a Kira deve vir falar com você sobre a missão que a gente vai fazer em Rosewood. A gente deve ficar ali por um tempo. No melhor dos cenários, nós voltamos em uma semana. A gente vai precisar, talvez, de medicamento pra mais tempo do que isso.",
+    "reply": "Vou garantir que tenhamos os medicamentos certos para seguir em frente. Estarei aqui para ajudar no que precisarem.",
+    "intent": "Ajudar a comunidade a sobreviver sem depender de recursos escassos.",
+    "action": {
+      "type": "say",
+      "content": "Vou garantir que tenhamos os medicamentos certos para seguir em frente. Estarei aqui para ajudar no que precisarem."
+    },
+    "thread_id": "ezra:59c61724-4126-4ac0-b121-f8b6427dfd04"
+  },
+  {
+    "ts": "2025-11-28T02:05:51.209468+00:00",
+    "npc_id": "ezra",
+    "user": "quais medicamentos temos que conseguiriam aguentar a missão a rosewood que eu e kira vamos fazer ?\n",
+    "reply": "Na missão em Rosewood, precisamos de analgésicos, antibióticos e anti-inflamatórios. Vou checar o estoque e ver o que podemos usar.",
+    "intent": "Avaliar o estoque de medicamentos disponíveis.",
+    "action": {
+      "type": "say",
+      "content": "Na missão em Rosewood, precisamos de analgésicos, antibióticos e anti-inflamatórios. Vou checar o estoque e ver o que podemos usar."
+    },
+    "thread_id": "ezra:bfb0a42f-b0c2-4100-95a8-e704772186bb"
   }
 ]

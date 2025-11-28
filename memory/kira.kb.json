@@ -22,6 +22,26 @@
         "evidence": "lá tem um cadeia que deve estar cheia de suprimentos"
       },
       "last_updated": "2025-11-28T01:04:32.640475+00:00"
+    },
+    {
+      "title": "Fort Knox",
+      "summary": "Possível local para próxima missão após Rosewood",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "eu vou precisar de um mapa de Fort Knox, porque a gente vai fazer uma outra missão depois que a gente sair de Rosewood"
+      },
+      "last_updated": "2025-11-28T14:12:44.991880+00:00"
+    },
+    {
+      "title": "West Point",
+      "summary": "Cidade com ruas estreitas e armazéns antigos, desafiando a criação de mapas seguros",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "como anda west point ? como são as ruas e os armazens ?"
+      },
+      "last_updated": "2025-11-28T14:17:26.314992+00:00"
     }
   ],
   "skills": [],

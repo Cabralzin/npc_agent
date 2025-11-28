@@ -21,6 +21,6 @@ async def perception(state: NPCState) -> NPCState:
     state["events"] = []
 
     # Log com quebra de linha
-    _logger.info("perception.out: summary_len=%s\n", len(summary))
+    _logger.info("perception.out: summary_len=%s summary=%s\n", len(summary), summary)
 
     return state

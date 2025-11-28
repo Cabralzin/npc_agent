@@ -104,34 +104,34 @@ async def planner(state: NPCState) -> NPCState:
     world_knowledge = ""
 
     for line in raw.splitlines():
-        l = line.strip()
-        if not l:
+        line_stripped = line.strip()
+        if not line_stripped:
             continue
-        upper = l.upper()
+        upper = line_stripped.upper()
 
         if upper.startswith("INTENÇÃO:"):
-            intent = l.split(":", 1)[1].strip()
+            intent = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("NEEDS_WORLD:"):
-            val = l.split(":", 1)[1].strip().lower()
+            val = line_stripped.split(":", 1)[1].strip().lower()
             needs_world = val in ("yes", "sim", "true")
         elif upper.startswith("WORLD_QUERY:"):
-            world_query = l.split(":", 1)[1].strip()
+            world_query = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("PLAN:"):
-            plan = l.split(":", 1)[1].strip()
+            plan = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("CURRENT_GOAL:"):
-            current_goal = l.split(":", 1)[1].strip()
+            current_goal = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("PERCEIVED_CONTEXT:"):
-            perceived_context = l.split(":", 1)[1].strip()
+            perceived_context = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("ENVIRONMENTAL_CUES:"):
-            environmental_cues = l.split(":", 1)[1].strip()
+            environmental_cues = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("PERSONALITY_ANALYSIS:"):
-            personality_analysis = l.split(":", 1)[1].strip()
+            personality_analysis = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("EMOTIONAL_STATE:"):
-            emotional_state_str = l.split(":", 1)[1].strip()
+            emotional_state_str = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("RELEVANT_MEMORIES:"):
-            relevant_memories = l.split(":", 1)[1].strip()
+            relevant_memories = line_stripped.split(":", 1)[1].strip()
         elif upper.startswith("WORLD_KNOWLEDGE:"):
-            world_knowledge = l.split(":", 1)[1].strip()
+            world_knowledge = line_stripped.split(":", 1)[1].strip()
 
     if not intent:
         intent = raw
@@ -157,10 +157,11 @@ async def planner(state: NPCState) -> NPCState:
     state["world_knowledge"] = world_knowledge or lore or ""
 
     _logger.info(
-        "planner.out: intent=%s needs_world=%s has_query=%s plan=%s current_goal=%s\n",
+        "planner.out: intent=%s needs_world=%s has_query=%s world_query=%s plan=%s current_goal=%s\n",
         intent,
         needs_world,
         bool(world_query),
+        world_query or "",
         state["plan"],
         state["current_goal"],
     )

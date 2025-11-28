@@ -1,5 +1,6 @@
 from langchain_core.messages import SystemMessage, HumanMessage
 import logging
+import json
 
 from core.llm import LLMHarness
 from core.state import NPCState
@@ -54,9 +55,15 @@ async def critic(state: NPCState) -> NPCState:
                 "- Ajuste principalmente: frases muito longas, construções formais, ritmo inadequado.\n"
                 "- Evite reescrever completamente - faça ajustes cirúrgicos.\n"
                 "\n"
-                "SAÍDA:\n"
-                "- Retorne APENAS a fala final do NPC, otimizada para ser FALADA naturalmente.\n"
-                "- Sem aspas, sem markdown, sem explicações.\n"
+                "FORMATO DE SAÍDA:\n"
+                "- Se você FIZER ALTERAÇÕES na fala, retorne um JSON com:\n"
+                "  {\n"
+                "    \"fala\": \"<fala final otimizada>\",\n"
+                "    \"justificativa\": \"<explicação breve do motivo da alteração>\"\n"
+                "  }\n"
+                "- Se você NÃO FIZER ALTERAÇÕES (manteve a fala original), retorne APENAS a fala final como texto simples.\n"
+                "- A fala deve estar otimizada para ser FALADA naturalmente.\n"
+                "- Sem aspas extras, sem markdown, sem explicações fora do JSON.\n"
                 "- Foque em como soará quando convertida em voz."
             )
         ),
@@ -82,9 +89,35 @@ async def critic(state: NPCState) -> NPCState:
     )
 
     text = await _llm.run(prompt)
-    final = (text or "").strip().strip('"').strip("'")
+    text = (text or "").strip()
+
+    # Tenta parsear como JSON (se houver alterações)
+    final = ""
+    justificativa = ""
+
+    try:
+        # Remove markdown code blocks se houver
+        if text.startswith("```"):
+            first_newline = text.find("\n")
+            last_backtick = text.rfind("```")
+            if first_newline != -1 and last_backtick != -1:
+                text = text[first_newline + 1:last_backtick].strip()
+
+        # Tenta parsear como JSON
+        parsed = json.loads(text)
+        if isinstance(parsed, dict):
+            final = parsed.get("fala", "").strip().strip('"').strip("'")
+            justificativa = parsed.get("justificativa", "").strip()
+        else:
+            # Se não for dict, trata como texto simples
+            final = text.strip().strip('"').strip("'")
+    except (json.JSONDecodeError, AttributeError):
+        # Se não for JSON válido, trata como texto simples (sem alterações)
+        final = text.strip().strip('"').strip("'")
 
     _logger.info("critic.out: %s\n", final)
+    if justificativa:
+        _logger.info("critic.justificativa: %s\n", justificativa)
 
     # fala final no scratch
     state["scratch"]["final_reply"] = final

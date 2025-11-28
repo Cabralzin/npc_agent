@@ -105,6 +105,16 @@
         "evidence": "Ezra vou sair com a Raven para pegar equipamentos e ir ate rosewood, a Kira ja me deu um mapa da região, preciso saber oque devo levar de mantimentos médicos para 2 semanas"
       },
       "last_updated": "2025-11-19T17:35:55.540335+00:00"
+    },
+    {
+      "title": "Analgésicos e anti-inflamatórios",
+      "summary": "Medicamentos essenciais para a missão em Rosewood, a serem verificados no estoque antes da viagem com Kira.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Na missão em Rosewood, precisamos de analgésicos, antibióticos e anti-inflamatórios. Vou checar o estoque e ver o que podemos usar."
+      },
+      "last_updated": "2025-11-28T02:05:52.707425+00:00"
     }
   ]
 }

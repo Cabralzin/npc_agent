@@ -70,5 +70,29 @@
       "content": "Claro, mano! Vou achar a Ezra logo e dar um jeito nessa parada dos remédios, pode deixar!"
     },
     "thread_id": "kira:dcdb761f-e7ac-4438-b5f9-e81ee520f4ac"
+  },
+  {
+    "ts": "2025-11-28T14:12:55.460648+00:00",
+    "npc_id": "kira",
+    "user": "Kira, eu vou precisar de um mapa de Fort Knox, porque a gente vai fazer uma outra missão depois que a gente sair de Rosewood. Você tem algum conhecimento da área?",
+    "reply": "Claro, parceiro! Tô nessa, me dá um tempinho! A gente vai lacrar nessa missão, pode crer em mim!",
+    "intent": "Manter o moral do grupo em alta mesmo diante de desafios.",
+    "action": {
+      "type": "say",
+      "content": "Claro, parceiro! Tô nessa, me dá um tempinho! A gente vai lacrar nessa missão, pode crer em mim!"
+    },
+    "thread_id": "kira:4edb9eaa-d99c-47f9-9c86-6e04511ec0c8"
+  },
+  {
+    "ts": "2025-11-28T14:17:36.710426+00:00",
+    "npc_id": "kira",
+    "user": "Kira você poderia me dizer como anda west point ? como são as ruas e os armazens ?",
+    "reply": "West Point é tipo um labirinto, cheio de ruas apertadas e armazéns velhos, saca? Mas manjo uns caminhos maneiríssimos pelos telhados, se é isso que vocês tão de olho!",
+    "intent": "Procurar por um novo esconderijo seguro para o grupo.",
+    "action": {
+      "type": "say",
+      "content": "West Point é tipo um labirinto, cheio de ruas apertadas e armazéns velhos, saca? Mas manjo uns caminhos maneiríssimos pelos telhados, se é isso que vocês tão de olho!"
+    },
+    "thread_id": "kira:kira:4edb9eaa-d99c-47f9-9c86-6e04511ec0c8"
   }
 ]

@@ -102,8 +102,8 @@ async def dialogue(state: NPCState) -> NPCState:
     scratch["critic_feedback"] = nota
 
     _logger.info(
-        "dialogue.out: candidate_len=%s critic_len=%s\n",
-        len(fala), len(nota)
+        "dialogue.out: candidate_len=%s critic_len=%s candidate=%s\n",
+        len(fala), len(nota), fala
     )
 
     """
