@@ -1,0 +1,18 @@
+{
+  "life": [],
+  "people": [],
+  "places": [
+    {
+      "title": "Rosewood",
+      "summary": "Cidade com uma cadeia cheia de suprimentos",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "lá tem um cadeia que deve estar cheia de suprimentos"
+      },
+      "last_updated": "2025-11-28T01:04:32.640475+00:00"
+    }
+  ],
+  "skills": [],
+  "objects": []
+}

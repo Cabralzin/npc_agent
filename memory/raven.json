@@ -10,5 +10,29 @@
       "content": "Os galpões de West Point são o lugar certo pra achar essas peças raras. Bora nessa, não dá pra ficar enrolando."
     },
     "thread_id": "raven:2ca0aa4b-5d9a-42e4-a9ee-cbaa39266689"
+  },
+  {
+    "ts": "2025-11-19T19:29:07.134816+00:00",
+    "npc_id": "raven",
+    "user": "Raven, peguei um mapa que a Kira fez da região de rosewood, devemos encontrar peças para o carro na garagem do posto de policia da cidade, Ezra me mandou uma lista de medicamentos para levarmos. Qual a primeira coisa que precisamos ficar de olho para reparar seu carro ?\n",
+    "reply": "Vamos precisar de um motor em condições decentes, peças de suspensão e pneus resistentes. Fique de olho nisso, e talvez consigamos sair dessa enrascada.",
+    "intent": "Continuar a busca por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Vamos precisar de um motor em condições decentes, peças de suspensão e pneus resistentes. Fique de olho nisso, e talvez consigamos sair dessa enrascada."
+    },
+    "thread_id": "raven:bc4abc66-383d-4c30-bc4b-39ef8db9ec5f"
+  },
+  {
+    "ts": "2025-11-19T19:31:14.648030+00:00",
+    "npc_id": "raven",
+    "user": "Raven, peguei um mapa que a Kira fez da região de rosewood, devemos encontrar peças para o carro na garagem do posto de policia da cidade, Ezra me mandou uma lista de medicamentos para levarmos. Qual a primeira coisa que precisamos ficar de olho para reparar seu carro ?",
+    "reply": "Antes de sair caçando peças raras, vou dar uma olhada no motor, nas rodas e na lataria. Não quero que meu veículo vire sucata no meio do caminho.",
+    "intent": "Procurar por peças raras em galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Antes de sair caçando peças raras, vou dar uma olhada no motor, nas rodas e na lataria. Não quero que meu veículo vire sucata no meio do caminho."
+    },
+    "thread_id": "raven:3199197b-5320-4bd0-88ac-ebbf06249364"
   }
 ]

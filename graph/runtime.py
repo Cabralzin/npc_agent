@@ -192,8 +192,12 @@ class NPCGraph:
         except Exception as e:
             self.logger.warning(f"[tid={tid}] auto_memorize failed: {e}")
 
-        result["messages"] = EpisodicMemory().reduce(result.get("messages", []))
-        await self.app.ainvoke(result, config={"configurable": {"thread_id": tid}})
+        # Reduz mensagens para manter apenas as últimas N (EpisodicMemory)
+        # Nota: O LangGraph já salva o estado automaticamente no checkpoint após ainvoke,
+        # então não precisamos executar o grafo novamente apenas para salvar o estado reduzido
+        # result["messages"] = EpisodicMemory().reduce(result.get("messages", []))
+        # await self.app.ainvoke(result, config={"configurable": {"thread_id": tid}})
+        
         return {
             "thread_id": tid,
             "action": action,

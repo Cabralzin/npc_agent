@@ -118,5 +118,17 @@
       "content": "Vamos verificar cada item, garantindo sua utilidade futura. Juntos, organizaremos tudo com segurança."
     },
     "thread_id": "ezra:43b3fc05-2dfb-4567-a1e1-df42b80b1443"
+  },
+  {
+    "ts": "2025-11-25T14:50:18.234061+00:00",
+    "npc_id": "ezra",
+    "user": "Quantos medicamentos temos",
+    "reply": "Temos uma quantidade limitada de medicamentos raros, é crucial procurar mais antes que expirem.",
+    "intent": "Avaliar a necessidade de abastecimento de medicamentos raros.",
+    "action": {
+      "type": "say",
+      "content": "Temos uma quantidade limitada de medicamentos raros, é crucial procurar mais antes que expirem."
+    },
+    "thread_id": "ezra:2e2c97f0-bcd5-40bd-ba43-a9f20e5803fe"
   }
 ]

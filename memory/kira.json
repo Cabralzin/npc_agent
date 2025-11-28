@@ -10,5 +10,53 @@
       "content": "Claro, vou te mostrar o mapa! Boa sorte na busca, e não se esqueça de sorrir, a vida é uma aventura, amigo!"
     },
     "thread_id": "kira:a0921150-8acd-4304-8aa7-af697bd44a32"
+  },
+  {
+    "ts": "2025-11-28T00:55:04.153007+00:00",
+    "npc_id": "kira",
+    "user": "Kira, como estão os preparativos ?",
+    "reply": "Ei, meu chapa! Tamo indo bem, tô bolando um mapa irado pra gente se aventurar pelos telhados e becos! Vai ser sensacional, pode crer!",
+    "intent": "Manter o moral do grupo elevado, mesmo diante de desafios",
+    "action": {
+      "type": "say",
+      "content": "Ei, meu chapa! Tamo indo bem, tô bolando um mapa irado pra gente se aventurar pelos telhados e becos! Vai ser sensacional, pode crer!"
+    },
+    "thread_id": "kira:f4adff64-b8e4-4c6a-add2-0fd45bef48b8"
+  },
+  {
+    "ts": "2025-11-28T01:02:09.618673+00:00",
+    "npc_id": "kira",
+    "user": "Kira você ja fez algum mapa de knox ?\n",
+    "reply": "Nunca fui pra Knox, mas quem sabe? Posso criar um mapa por lá também!",
+    "intent": "Encontrar um novo esconderijo seguro para o grupo.",
+    "action": {
+      "type": "say",
+      "content": "Nunca fui pra Knox, mas quem sabe? Posso criar um mapa por lá também!"
+    },
+    "thread_id": "kira:b1a4fa0d-ac84-48e2-a41e-9214615dbd45"
+  },
+  {
+    "ts": "2025-11-28T01:04:40.049656+00:00",
+    "npc_id": "kira",
+    "user": "Ja foi a rosewood kira ? lá tem um cadeia que deve estar cheia de suprimentos, acha que consegue gerar uma rota de onde estamos até la ?\n",
+    "reply": "Rosewood, hein? Nunca fui, mas vou dar um jeito de mapear uma rota segura até a cadeia. Comigo, tá tudo sob controle, camarada!",
+    "intent": "Pensando em como manter o moral do grupo mesmo em situações difíceis.",
+    "action": {
+      "type": "say",
+      "content": "Rosewood, hein? Nunca fui, mas vou dar um jeito de mapear uma rota segura até a cadeia. Comigo, tá tudo sob controle, camarada!"
+    },
+    "thread_id": "kira:8e491c7c-4b5f-43a7-8c42-a4606105e7db"
+  },
+  {
+    "ts": "2025-11-28T01:07:23.683589+00:00",
+    "npc_id": "kira",
+    "user": "Seria importante a rota passar pela entrada de cima de rosewood, onde tem um supermercado, lá devemos encontrar mantimentos, é possivel que fiquemos um bom tempo na cidade\n",
+    "reply": "Ah, rapaz, sei bem o que cê tá falando! A entrada de cima de Rosewood é top! Vou dar um jeito de mapear essa rota direitinho, pode deixar comigo!",
+    "intent": "Procurar por novas rotas seguras entre Muldraugh e West Point",
+    "action": {
+      "type": "say",
+      "content": "Ah, rapaz, sei bem o que cê tá falando! A entrada de cima de Rosewood é top! Vou dar um jeito de mapear essa rota direitinho, pode deixar comigo!"
+    },
+    "thread_id": "kira:08a3ed0f-11b2-41d1-806c-9d8a276a7268"
   }
 ]
