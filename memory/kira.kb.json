@@ -10,28 +10,38 @@
         "evidence": "fale com a Ezra sobre quais medicamentos nós vamos poder levar nessa missão a Rosewood"
       },
       "last_updated": "2025-11-28T01:23:59.944097+00:00"
+    },
+    {
+      "title": "Gabe",
+      "summary": "Acompanhará Kira e Jason na próxima missão para Rosewood",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Gabe: Kira, vou estar indo com você e o Jason para rosewood na próxima missão, prazer"
+      },
+      "last_updated": "2025-12-02T23:15:28.756343+00:00"
     }
   ],
   "places": [
     {
       "title": "Rosewood",
-      "summary": "Cidade com uma cadeia cheia de suprimentos",
-      "metadata": {
-        "source": "dialogue",
-        "confidence": 0.9,
-        "evidence": "lá tem um cadeia que deve estar cheia de suprimentos"
-      },
-      "last_updated": "2025-11-28T01:04:32.640475+00:00"
-    },
-    {
-      "title": "Fort Knox",
-      "summary": "Possível local para próxima missão após Rosewood",
+      "summary": "Kira está se preparando para a próxima missão em Rosewood, acompanhada por Gabe e Jason.",
       "metadata": {
         "source": "dialogue",
         "confidence": 1.0,
-        "evidence": "eu vou precisar de um mapa de Fort Knox, porque a gente vai fazer uma outra missão depois que a gente sair de Rosewood"
+        "evidence": "Gabe: Kira, vou estar indo com você e o Jason para rosewood na próxima missão, prazer"
       },
-      "last_updated": "2025-11-28T14:12:44.991880+00:00"
+      "last_updated": "2025-12-02T23:15:46.058631+00:00"
+    },
+    {
+      "title": "Fort Knox",
+      "summary": "Kira está trabalhando no mapeamento seguro de telhados e becos em Fort Knox para a próxima missão",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "preciso de uma descrição dos mapas da cidade de Knox"
+      },
+      "last_updated": "2025-11-28T19:19:13.250168+00:00"
     },
     {
       "title": "West Point",
@@ -42,8 +52,69 @@
         "evidence": "como anda west point ? como são as ruas e os armazens ?"
       },
       "last_updated": "2025-11-28T14:17:26.314992+00:00"
+    },
+    {
+      "title": "Rosewood para Fort Knox",
+      "summary": "Kira está trabalhando no mapeamento seguro de telhados e becos entre Rosewood e Fort Knox para a próxima missão",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Como anda o mapeamento de Rosewood para a proxima missão"
+      },
+      "last_updated": "2025-11-28T19:12:25.541893+00:00"
+    },
+    {
+      "title": "Lojas de armas em Rosewood",
+      "summary": "Informações sobre as lojas de armas em Rosewood não estão disponíveis no momento.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Eu preciso que você me traga uma informação referente a onde ficam as lojas de armas de Rosewood."
+      },
+      "last_updated": "2025-12-02T22:00:53.969958+00:00"
+    },
+    {
+      "title": "Mercado no começo de Rosewood",
+      "summary": "Kira concorda em vasculhar o mercado no começo de Rosewood como primeira tarefa da missão, junto com Gabe e Jason.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "estava pensando em nossa primeira tarefa agora que temos 3 pessoas ser vascular o mercado no começo de rosewood, oque acha ?"
+      },
+      "last_updated": "2025-12-02T23:22:42.211756+00:00"
+    },
+    {
+      "title": "Telhados das casas de Rosewood",
+      "summary": "Kira e Jason vão começar a mapear os telhados das casas de Rosewood para a próxima missão.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Jason: Kira, precisamos fazer um mapa dos telhados das casas de rosewood, como acha que devemos começar ?"
+      },
+      "last_updated": "2025-12-03T00:19:07.069803+00:00"
+    },
+    {
+      "title": "Esconderijo Cordar",
+      "summary": "Local onde Kira e o grupo estão se preparando para escalar as casas altas para a próxima missão de mapeamento.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Kira consegue procurar aqui no esconderijo cordar para podermos escalar as casas altas que você falou ?"
+      },
+      "last_updated": "2025-12-03T00:56:46.197249+00:00"
     }
   ],
   "skills": [],
-  "objects": []
+  "objects": [
+    {
+      "title": "Câmeras e alarmes para segurança de carros",
+      "summary": "Sugestão de sistema de segurança com câmeras e alarmes para proteção veicular",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Acho que câmeras e alarmes são uma boa ideia, né?"
+      },
+      "last_updated": "2025-11-28T18:23:08.679634+00:00"
+    }
+  ]
 }

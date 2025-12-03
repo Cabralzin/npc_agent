@@ -52,6 +52,16 @@
         "evidence": "devemos sair juntos amanhã de manhã para irmos para rosewood, vamos limpar o quartel de bombeiros perto da prisão"
       },
       "last_updated": "2025-11-19T16:59:02.409121+00:00"
+    },
+    {
+      "title": "Knox",
+      "summary": "Antes da epidemia, Knox tinha laboratórios farmacêuticos importantes onde podemos encontrar medicamentos valiosos.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 1.0,
+        "evidence": "Sabe algo sobre a cidade de Knox ?"
+      },
+      "last_updated": "2025-11-28T16:18:14.801594+00:00"
     }
   ],
   "skills": [],

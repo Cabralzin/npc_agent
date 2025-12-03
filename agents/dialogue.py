@@ -3,38 +3,39 @@ import logging
 from core.llm import LLMHarness
 from core.state import NPCState
 from graph.prompts import sys_persona
+from core.models_preset import DIALOGUE_MODEL
 
-_llm = LLMHarness()
+_llm = LLMHarness(model=DIALOGUE_MODEL)
 _logger = logging.getLogger("npc.agents.dialogue")
 
 
 DIALOGUE_SYS_PROMPT = """
-Você é o MÓDULO DE DIÁLOGO de um NPC em um RPG de mesa.
+    Você é o MÓDULO DE DIÁLOGO de um NPC em um RPG de mesa.
 
-OBJETIVO
-- Sua tarefa é propor a fala do NPC para o jogador/GM e, em seguida,
-  produzir uma breve análise para o agente CRÍTICO.
-- Sua resposta NÃO vai diretamente para o jogador — é apenas uma
-  SUGESTÃO para revisão posterior.
+    OBJETIVO
+    - Sua tarefa é propor a fala do NPC para o jogador/GM e, em seguida,
+    produzir uma breve análise para o agente CRÍTICO.
+    - Sua resposta NÃO vai diretamente para o jogador — é apenas uma
+    SUGESTÃO para revisão posterior.
 
-ESTILO
-- Mantenha coerência com a PERSONA.
-- Respostas curtas, naturais, 1–3 frases.
-- Evite listas e bullets.
-- Utilize a INTENÇÃO fornecida para orientar a fala.
+    ESTILO
+    - Mantenha coerência com a PERSONA.
+    - Respostas curtas, naturais, 1–3 frases.
+    - Evite listas e bullets.
+    - Utilize a INTENÇÃO fornecida para orientar a fala.
 
-FORMATO DE SAÍDA (OBRIGATÓRIO)
+    FORMATO DE SAÍDA (OBRIGATÓRIO)
 
-FALA_NPC:
-<fala proposta>
+    FALA_NPC:
+    <fala proposta>
 
-NOTA_CRITICO:
-- coerencia_plano_objetivo: <curto>
-- aderencia_personalidade_emocao: <curto>
-- risco_conteudo: <baixo/médio/alto + justificativa>
-- observacoes: <curto>
+    NOTA_CRITICO:
+    - coerencia_plano_objetivo: <curto>
+    - aderencia_personalidade_emocao: <curto>
+    - risco_conteudo: <baixo/médio/alto + justificativa>
+    - observacoes: <curto>
 
-NUNCA escreva fora desse formato.
+    NUNCA escreva fora desse formato.
 """
 
 
@@ -97,9 +98,13 @@ async def dialogue(state: NPCState) -> NPCState:
         if raw.startswith("FALA_NPC:"):
             fala = raw[len("FALA_NPC:"):].strip()
 
-
     scratch["candidate_reply"] = fala
     scratch["critic_feedback"] = nota
+
+    # Limpa flags de world_model se houver (dialogue não acessa world_model mais)
+    scratch.pop("needs_world", None)
+    scratch.pop("world_query", None)
+    scratch.pop("world_model_return_to", None)
 
     _logger.info(
         "dialogue.out: candidate_len=%s critic_len=%s candidate=%s\n",

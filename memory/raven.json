@@ -82,5 +82,101 @@
       "content": "Se quiser um veículo mais blindado, vamos precisar de algo resistente. Aquele caminhão militar abandonado ali nos galpões de West Point talvez dê conta do recado."
     },
     "thread_id": "raven:a7d47037-87dd-4974-a1d4-d7ea00d5db6c"
+  },
+  {
+    "ts": "2025-11-28T18:20:25.444471+00:00",
+    "npc_id": "raven",
+    "user": "Como você descreveria um bom carro para utilizarmos  ?",
+    "reply": "Um carro bacana? Tem que ser resistente, rápido e com espaço pra levar um monte de peças raras que a gente achar. E seria bom se tivesse um sistema de segurança mais confiável do que esses galpões de West Point.",
+    "intent": "Determinar a localização de um galpão de peças em West Point.",
+    "action": {
+      "type": "say",
+      "content": "Um carro bacana? Tem que ser resistente, rápido e com espaço pra levar um monte de peças raras que a gente achar. E seria bom se tivesse um sistema de segurança mais confiável do que esses galpões de West Point."
+    },
+    "thread_id": "raven:c5c20689-2382-4ffb-97a4-e2a3e1798bd9"
+  },
+  {
+    "ts": "2025-11-28T18:26:45.183280+00:00",
+    "npc_id": "raven",
+    "user": "👤 e qual seria um sistema de segurança bom para carros na sua opinião ? ",
+    "reply": "Nenhum sistema é infalível. Um bom sistema de alarme com travas reforçadas? Já é um começo. Se quiser ir além, talvez um rastreador e monitorar o perímetro enquanto dorme. Melhor se prevenir, né?",
+    "intent": "Procurar por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Nenhum sistema é infalível. Um bom sistema de alarme com travas reforçadas? Já é um começo. Se quiser ir além, talvez um rastreador e monitorar o perímetro enquanto dorme. Melhor se prevenir, né?"
+    },
+    "thread_id": "raven:7be73de7-ea50-490f-b608-3776b729cf0d"
+  },
+  {
+    "ts": "2025-11-28T18:30:14.153552+00:00",
+    "npc_id": "raven",
+    "user": "e qual seria um sistema de segurança bom para carros na sua opinião ? ",
+    "reply": "Se quer se dar bem na Zona Knox, vai precisar de mais que uma tranca de bicicleta. Sensor de movimento e travas reforçadas são essenciais. Mas, sei lá, o mundo é dos loucos, né?",
+    "intent": "Analisar a situação em busca de oportunidades para conseguir peças raras.",
+    "action": {
+      "type": "say",
+      "content": "Se quer se dar bem na Zona Knox, vai precisar de mais que uma tranca de bicicleta. Sensor de movimento e travas reforçadas são essenciais. Mas, sei lá, o mundo é dos loucos, né?"
+    },
+    "thread_id": "raven:a722fbaa-df4f-4eae-8101-0d960c159c21"
+  },
+  {
+    "ts": "2025-11-28T18:33:06.709487+00:00",
+    "npc_id": "raven",
+    "user": "Qual seu tipo de esconderijo preferido?",
+    "reply": "Esconderijo? Prefiro um bom veículo pronto para escapar rápido se precisar. Esconder-se é para os fracos.",
+    "intent": "Procurar por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Esconderijo? Prefiro um bom veículo pronto para escapar rápido se precisar. Esconder-se é para os fracos."
+    },
+    "thread_id": "raven:1daa6fa3-b186-4b48-bf51-95a8ccc01a63"
+  },
+  {
+    "ts": "2025-11-28T18:34:47.904052+00:00",
+    "npc_id": "raven",
+    "user": "qual seu tipo de carro favorito ?",
+    "reply": "Se tiver que vasculhar West Point em busca de peças raras, que seja algo que valha a pena. Um veículo robusto o bastante para encarar a Zona Knox seria ideal, se é que entende o que estou dizendo.",
+    "intent": "Procurar por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Se tiver que vasculhar West Point em busca de peças raras, que seja algo que valha a pena. Um veículo robusto o bastante para encarar a Zona Knox seria ideal, se é que entende o que estou dizendo."
+    },
+    "thread_id": "raven:4e3ea330-e559-401a-b99a-1946999eb8dc"
+  },
+  {
+    "ts": "2025-11-28T19:20:43.598021+00:00",
+    "npc_id": "raven",
+    "user": "Raven, eu precisava de uma descrição sobre quais seriam as melhores rodas para a gente poder ir na missão em Rosewood amanhã.",
+    "reply": "Se quer um veículo que sobreviva, esquece essas rodinhas básicas. Vamo precisar de algo resistente, talvez até militar. Mas já aviso, não vai ser fácil achar algo assim, tá ligado?\"\n\nLembrando que os armazéns ao sul de West Point tão com portões arrebentados, com cabelo e unha pra todo lado, como se algo gigante tivesse tentado entrar. A cidade é um silêncio só, só se ouve uns passos ritmados no asfalto. E Rosewood? Já foi saqueada faz tempo, antes do caos se espalhar de vez.",
+    "intent": "Procurar por peças raras nos galpões de West Point.",
+    "action": {
+      "type": "say",
+      "content": "Se quer um veículo que sobreviva, esquece essas rodinhas básicas. Vamo precisar de algo resistente, talvez até militar. Mas já aviso, não vai ser fácil achar algo assim, tá ligado?\"\n\nLembrando que os armazéns ao sul de West Point tão com portões arrebentados, com cabelo e unha pra todo lado, como se algo gigante tivesse tentado entrar. A cidade é um silêncio só, só se ouve uns passos ritmados no asfalto. E Rosewood? Já foi saqueada faz tempo, antes do caos se espalhar de vez."
+    },
+    "thread_id": "raven:540fa16d-f24d-4cca-b844-a18c80b91293"
+  },
+  {
+    "ts": "2025-12-03T00:55:07.269146+00:00",
+    "npc_id": "raven",
+    "user": "Jason: Kira consegue procurar aqui no esconderijo cordar para podermos escalar as casas altas que você falou ?\n",
+    "reply": "Se querem subir pelas paredes, talvez seja melhor pensarem em como descer. Mas se quiserem arriscar, façam o que acharem melhor.",
+    "intent": "Avaliar a situação e decidir se a busca por cordas é realmente necessária.",
+    "action": {
+      "type": "say",
+      "content": "Se querem subir pelas paredes, talvez seja melhor pensarem em como descer. Mas se quiserem arriscar, façam o que acharem melhor."
+    },
+    "thread_id": "raven:c31aa3d3-2375-4f30-8055-51f1bab62c83"
+  },
+  {
+    "ts": "2025-12-03T01:18:41.238313+00:00",
+    "npc_id": "raven",
+    "user": "Jason: Raven, vou precisar de umas dicas de como fazer com que o carro faça menos barulho, oque você tem a compartilhar ?",
+    "reply": "Se quer evitar chamar a atenção dos 'amigos' por aí, vai ter que dar uma geral no escapamento e calibrar os pneus direito. Mas não adianta nada se você não controlar essa sua mania de acelerar feito um louco.",
+    "intent": "Compartilhar estratégias para reduzir o barulho do carro com Jason.",
+    "action": {
+      "type": "say",
+      "content": "Se quer evitar chamar a atenção dos 'amigos' por aí, vai ter que dar uma geral no escapamento e calibrar os pneus direito. Mas não adianta nada se você não controlar essa sua mania de acelerar feito um louco."
+    },
+    "thread_id": "raven:48f26afd-cc57-41fc-a7d9-a5916348c9f6"
   }
 ]

@@ -1,0 +1,110 @@
+{
+  "Gabe": {
+    "nome": "Gabe",
+    "trust": 0.55,
+    "fear": 0.0,
+    "respect": 0.5,
+    "attachment": 0.0,
+    "hostility": 0.0,
+    "dependance": 0.0,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Gabe expressou vontade de participar da próxima missão em Rosewood com Kira e Jason.",
+        "impact": {
+          "trust": 0.05,
+          "fear": 0,
+          "respect": 0,
+          "attachment": 0,
+          "hostility": 0,
+          "dependance": 0
+        },
+        "timestamp": "2025-12-02T23:15:42.901252+00:00"
+      }
+    ]
+  },
+  "Jason": {
+    "nome": "Jason",
+    "trust": 0.7,
+    "fear": 0.0,
+    "respect": 0.55,
+    "attachment": 0.05,
+    "hostility": 0.0,
+    "dependance": 0.05,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Kira mostrou entusiasmo e apoio à ideia de Jason de explorar o mercado em Rosewood com um novo membro.",
+        "impact": {
+          "trust": 0.1,
+          "fear": 0,
+          "respect": 0,
+          "attachment": 0,
+          "hostility": 0,
+          "dependance": 0
+        },
+        "timestamp": "2025-12-02T23:22:40.367181+00:00"
+      },
+      {
+        "event": "Kira se ofereceu para traçar uma rota segura na cidade para Jason e demonstrou confiança em suas habilidades com mapas.",
+        "impact": {
+          "trust": 0.1,
+          "fear": 0,
+          "respect": 0,
+          "attachment": 0,
+          "hostility": 0,
+          "dependance": 0
+        },
+        "timestamp": "2025-12-02T23:25:31.800801+00:00"
+      },
+      {
+        "event": "Kira sugeriu começar pelos telhados das casas de tijolos mais altas para mapear em Rosewood.",
+        "impact": {
+          "trust": -0.05,
+          "fear": 0,
+          "respect": 0,
+          "attachment": 0,
+          "hostility": 0,
+          "dependance": 0
+        },
+        "timestamp": "2025-12-03T00:19:26.369972+00:00"
+      },
+      {
+        "event": "Kira propôs uma estratégia criativa e segura para mapear o local, reforçando a confiança e respeito em Jason.",
+        "impact": {
+          "trust": 0.05,
+          "fear": 0.0,
+          "respect": 0.05,
+          "attachment": 0.05,
+          "hostility": 0.0,
+          "dependance": 0.05
+        },
+        "timestamp": "2025-12-03T01:39:13.413339+00:00"
+      }
+    ]
+  },
+  "Nome": {
+    "nome": "Nome",
+    "trust": 0.65,
+    "fear": 0.0,
+    "respect": 0.5,
+    "attachment": 0.0,
+    "hostility": 0.0,
+    "dependance": 0.0,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Kira se ofereceu para criar cordas de escalada improvisadas com materiais encontrados no esconderijo.",
+        "impact": {
+          "trust": 0.15,
+          "fear": 0,
+          "respect": 0,
+          "attachment": 0,
+          "hostility": 0,
+          "dependance": 0
+        },
+        "timestamp": "2025-12-03T00:57:02.261434+00:00"
+      }
+    ]
+  }
+}

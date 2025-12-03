@@ -1,0 +1,17 @@
+timestamp,agent,model,prompt_tokens,completion_tokens,total_tokens,response_time_ms,status,error_message,npc_id,attempt_number
+2025-12-02T22:18:23.546121,unknown,gpt-3.5-turbo,2338,162,2500,2501.28,success,,,1
+2025-12-02T22:18:25.672231,dinamic_emotion,gpt-3.5-turbo,1400,192,1592,2093.24,success,,,1
+2025-12-02T22:18:28.477103,context_awareness,gpt-3.5-turbo,1120,155,1275,2790.82,success,,,1
+2025-12-02T22:18:31.196699,planner,gpt-3.5-turbo,1408,281,1689,2715.05,success,,,1
+2025-12-02T22:18:33.256242,dialogue,gpt-3.5-turbo,752,184,936,2052.23,success,,,1
+2025-12-02T22:18:35.289323,critic,gpt-3.5-turbo,1631,125,1756,2025.24,success,,,1
+2025-12-02T22:18:41.229342,relationship,gpt-3.5-turbo,1376,177,1553,2197.85,success,,,1
+2025-12-02T22:18:42.354558,unknown,gpt-3.5-turbo,2596,27,2623,1110.38,success,,,1
+2025-12-02T22:38:49.458142,auto_memorize,gpt-4.1-mini,2031,27,2058,1888.15,success,,kira,1
+2025-12-02T22:38:52.868993,dinamic_emotion,gpt-4.1-mini,1266,161,1427,3389.05,success,,,1
+2025-12-02T22:38:56.068615,context_awareness,gpt-4.1-mini,952,173,1125,3191.54,success,,,1
+2025-12-02T22:39:01.631263,planner,gpt-4o,1209,238,1447,5554.58,success,,,1
+2025-12-02T22:39:05.010829,dialogue,gpt-4o,697,201,898,3372.06,success,,,1
+2025-12-02T22:39:07.577619,critic,gpt-4.1,1404,76,1480,2559.01,success,,,1
+2025-12-02T22:39:13.410092,relationship,gpt-4.1-mini,1246,172,1418,2498.37,success,,,1
+2025-12-02T22:39:15.235002,auto_memorize,gpt-4.1-mini,2111,69,2180,1812.21,success,,kira,1

@@ -674,7 +674,9 @@ with col_left:
                         st.info(f"✅ Áudio lido: {len(audio_bytes)} bytes")
                         # Transcreve o áudio
                         with st.spinner("🔄 Enviando para API de transcrição..."):
-                            transcribed = transcribe_audio(audio_bytes, language="pt")
+                            # Obtém npc_id do selected_key (definido no sidebar, linha ~408)
+                            # selected_key está no escopo global do script
+                            transcribed = transcribe_audio(audio_bytes, language="pt", npc_id=selected_key)
                             if transcribed:
                                 # Armazena no session_state para processar
                                 st.session_state.transcribed_text = transcribed

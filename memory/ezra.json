@@ -154,5 +154,29 @@
       "content": "Na missão em Rosewood, precisamos de analgésicos, antibióticos e anti-inflamatórios. Vou checar o estoque e ver o que podemos usar."
     },
     "thread_id": "ezra:bfb0a42f-b0c2-4100-95a8-e704772186bb"
+  },
+  {
+    "ts": "2025-11-28T16:15:16.403728+00:00",
+    "npc_id": "ezra",
+    "user": "Oque sabe sobre knox ?",
+    "reply": "Desculpe, não sei nada sobre o paradeiro do Knox. Se precisar de auxílio com alguma outra coisa, estou aqui para ajudar.",
+    "intent": "Manter a calma e fornecer orientações aos sobreviventes.",
+    "action": {
+      "type": "say",
+      "content": "Desculpe, não sei nada sobre o paradeiro do Knox. Se precisar de auxílio com alguma outra coisa, estou aqui para ajudar."
+    },
+    "thread_id": "ezra:8575935d-87e2-425c-83f1-a1568a0b2ee8"
+  },
+  {
+    "ts": "2025-11-28T16:18:12.920763+00:00",
+    "npc_id": "ezra",
+    "user": "Sabe algo sobre a cidade de Knox ?",
+    "reply": "Knox costumava ter laboratórios farmacêuticos importantes antes da epidemia. Podemos encontrar medicamentos valiosos por lá.",
+    "intent": "Buscar por suprimentos médicos essenciais.",
+    "action": {
+      "type": "say",
+      "content": "Knox costumava ter laboratórios farmacêuticos importantes antes da epidemia. Podemos encontrar medicamentos valiosos por lá."
+    },
+    "thread_id": "ezra:540d69ea-351d-420a-b9c5-70cd0ee0d1bf"
   }
 ]

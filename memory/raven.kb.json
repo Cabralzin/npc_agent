@@ -55,13 +55,13 @@
     },
     {
       "title": "Rosewood",
-      "summary": "Destino para onde Raven e Kira vão com o buggy de dois lugares",
+      "summary": "Cidade saqueada antes do caos se espalhar, ambiente desolado e perigoso.",
       "metadata": {
         "source": "dialogue",
         "confidence": 0.9,
-        "evidence": "Vai estar indo pra Rosewood, eu e a Kira"
+        "evidence": "Rosewood já foi saqueada faz tempo, antes do caos se espalhar de vez."
       },
-      "last_updated": "2025-11-28T02:21:28.238164+00:00"
+      "last_updated": "2025-11-28T19:20:45.892406+00:00"
     },
     {
       "title": "Caminhão militar abandonado nos galpões de West Point",
@@ -72,6 +72,16 @@
         "evidence": "Aquele caminhão militar abandonado ali nos galpões de West Point talvez dê conta do recado."
       },
       "last_updated": "2025-11-28T14:21:01.868610+00:00"
+    },
+    {
+      "title": "Armazéns ao sul de West Point",
+      "summary": "Portões arrebentados, sinais de algo gigante tentando entrar, ambiente deserto e assustador.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "Os armazéns ao sul de West Point estão com portões arrebentados, com cabelo e unha pra todo lado, como se algo gigante tivesse tentado entrar."
+      },
+      "last_updated": "2025-11-28T19:20:45.889750+00:00"
     }
   ],
   "skills": [],
@@ -85,6 +95,36 @@
         "evidence": "Raven precisamos encontrar rodas novas para o carro que achamos na estrada"
       },
       "last_updated": "2025-11-19T17:01:06.467578+00:00"
+    },
+    {
+      "title": "Sensor de movimento e travas reforçadas",
+      "summary": "Raven considera essenciais para segurança do carro na Zona Knox, além de uma tranca de bicicleta",
+      "metadata": {
+        "source": "user input",
+        "confidence": 0.9,
+        "evidence": "qual seria um sistema de segurança bom para carros na sua opinião ?"
+      },
+      "last_updated": "2025-11-28T18:30:15.686385+00:00"
+    },
+    {
+      "title": "Melhores rodas para a missão em Rosewood",
+      "summary": "Raven considera essencial escolher rodas resistentes e duráveis para enfrentar os desafios da missão em Rosewood, priorizando pneus todo-terreno para terrenos acidentados e variados.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "eu precisava de uma descrição sobre quais seriam as melhores rodas para a gente poder ir na missão em Rosewood amanhã."
+      },
+      "last_updated": "2025-11-28T19:20:28.462521+00:00"
+    },
+    {
+      "title": "Redução de ruído no carro",
+      "summary": "Raven considera essencial reduzir o barulho do carro na Zona Knox para evitar atrair atenção indesejada, sugerindo a utilização de materiais de isolamento acústico e a manutenção regular do motor e escapamento.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "vou precisar de umas dicas de como fazer com que o carro faça menos barulho"
+      },
+      "last_updated": "2025-12-03T01:18:23.548989+00:00"
     }
   ]
 }

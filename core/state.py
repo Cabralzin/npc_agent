@@ -29,7 +29,7 @@ class ScratchState(TypedDict, total=False):
     context_snapshot: str
 
 
-class NPCState(TypedDict):
+class NPCState(TypedDict, total=False):
     npc_id: str
     messages: List[Any]  # HumanMessage | AIMessage | SystemMessage
     events: List[Dict[str, Any]]
@@ -38,3 +38,5 @@ class NPCState(TypedDict):
     scratch: ScratchState
     action: Optional[Dict[str, Any]]
     persona: Persona
+    perceived_context: str
+    environmental_cues: str

@@ -1,7 +1,10 @@
 # core/voice.py
 import httpx
+import time
+from typing import Optional
 from openai import OpenAI
 from core.persona import Persona
+from core.metrics_logger import get_metrics_logger
 
 # Cliente HTTP com SSL verification desabilitado (para ambientes corporativos com proxy)
 _http_client = httpx.Client(verify=False)
@@ -71,13 +74,14 @@ def build_voice_instructions(persona: Persona) -> str:
     return " ".join(parts)
 
 
-def transcribe_audio(audio_bytes: bytes, language: str = "pt") -> str:
+def transcribe_audio(audio_bytes: bytes, language: str = "pt", npc_id: Optional[str] = None) -> str:
     """
     Transcreve áudio para texto usando a API Whisper da OpenAI.
     
     Args:
         audio_bytes: Bytes do arquivo de áudio (formato: wav, mp3, m4a, etc.)
         language: Código do idioma (padrão: "pt" para português)
+        npc_id: ID do NPC (opcional, para métricas)
     
     Returns:
         Texto transcrito do áudio
@@ -86,6 +90,7 @@ def transcribe_audio(audio_bytes: bytes, language: str = "pt") -> str:
     import logging
     
     logger = logging.getLogger("npc.core.voice")
+    metrics_logger = get_metrics_logger()
     
     if not audio_bytes:
         raise ValueError("audio_bytes está vazio")
@@ -96,6 +101,7 @@ def transcribe_audio(audio_bytes: bytes, language: str = "pt") -> str:
     audio_file = io.BytesIO(audio_bytes)
     audio_file.name = "audio.wav"  # Whisper detecta o formato automaticamente
     
+    start_time = time.time()
     try:
         # Usa a API de transcrição da OpenAI
         transcript = _client.audio.transcriptions.create(
@@ -103,35 +109,130 @@ def transcribe_audio(audio_bytes: bytes, language: str = "pt") -> str:
             file=audio_file,
             language=language,
         )
+        response_time_ms = (time.time() - start_time) * 1000
         text = transcript.text.strip()
+        
+        # Estima duração do áudio (aproximação: ~16KB por segundo para WAV 16kHz mono)
+        # Esta é uma estimativa, a API não retorna a duração exata
+        estimated_duration = len(audio_bytes) / 16000 if len(audio_bytes) > 0 else 0
+        
+        # Registra métricas
+        metrics_logger.log_audio_metrics(
+            service_type='transcription',
+            model='whisper-1',
+            input_size_bytes=len(audio_bytes),
+            output_size_bytes=len(text.encode('utf-8')),
+            response_time_ms=response_time_ms,
+            status='success',
+            npc_id=npc_id,
+            input_duration_seconds=estimated_duration,
+            text_length=len(text),
+            language=language,
+        )
+        
         logger.info(f"Transcrição concluída: {text[:50]}...")
         return text
     except Exception as e:
+        response_time_ms = (time.time() - start_time) * 1000
         logger.error(f"Erro ao transcrever áudio: {e}")
         import traceback
         logger.error(traceback.format_exc())
+        
+        # Registra métricas de erro
+        metrics_logger.log_audio_metrics(
+            service_type='transcription',
+            model='whisper-1',
+            input_size_bytes=len(audio_bytes),
+            output_size_bytes=0,
+            response_time_ms=response_time_ms,
+            status='error',
+            error_message=str(e),
+            npc_id=npc_id,
+            language=language,
+        )
+        
         raise
 
 
-def synthesize_npc_voice_bytes(text: str, persona: Persona) -> bytes:
+def synthesize_npc_voice_bytes(text: str, persona: Persona, npc_id: Optional[str] = None) -> bytes:
     """
     Gera áudio em memória (bytes) para a fala do NPC usando a API de voz da OpenAI.
     Não salva em disco.
+    
+    Args:
+        text: Texto a ser convertido em áudio
+        persona: Persona do NPC (para escolher voz e estilo)
+        npc_id: ID do NPC (opcional, para métricas)
+    
+    Returns:
+        Bytes do áudio gerado (formato MP3)
     """
+    import logging
+    
+    logger = logging.getLogger("npc.core.voice")
+    metrics_logger = get_metrics_logger()
+    
     api_voice = get_api_voice(persona)
     instructions = build_voice_instructions(persona)
 
     # Modelo recomendado de TTS
     model_name = "gpt-4o-mini-tts"
-
-    with _client.audio.speech.with_streaming_response.create(
-        model=model_name,
-        voice=api_voice,
-        input=text,
-        response_format="mp3",
-        instructions=instructions,
-    ) as response:
-        chunks = []
-        for chunk in response.iter_bytes():
-            chunks.append(chunk)
-        return b"".join(chunks)
+    
+    input_size = len(text.encode('utf-8'))
+    start_time = time.time()
+    
+    try:
+        with _client.audio.speech.with_streaming_response.create(
+            model=model_name,
+            voice=api_voice,
+            input=text,
+            response_format="mp3",
+            instructions=instructions,
+        ) as response:
+            chunks = []
+            for chunk in response.iter_bytes():
+                chunks.append(chunk)
+            audio_bytes = b"".join(chunks)
+            response_time_ms = (time.time() - start_time) * 1000
+            
+            # Estima duração do áudio MP3 (aproximação: ~16KB por segundo)
+            # Esta é uma estimativa, a API não retorna a duração exata
+            estimated_duration = len(audio_bytes) / 16000 if len(audio_bytes) > 0 else 0
+            
+            # Registra métricas
+            metrics_logger.log_audio_metrics(
+                service_type='tts',
+                model=model_name,
+                input_size_bytes=input_size,
+                output_size_bytes=len(audio_bytes),
+                response_time_ms=response_time_ms,
+                status='success',
+                npc_id=npc_id,
+                output_duration_seconds=estimated_duration,
+                text_length=len(text),
+                voice_id=api_voice,
+            )
+            
+            logger.info(f"TTS gerado: {len(audio_bytes)} bytes para texto de {len(text)} caracteres")
+            return audio_bytes
+    except Exception as e:
+        response_time_ms = (time.time() - start_time) * 1000
+        logger.error(f"Erro ao gerar TTS: {e}")
+        import traceback
+        logger.error(traceback.format_exc())
+        
+        # Registra métricas de erro
+        metrics_logger.log_audio_metrics(
+            service_type='tts',
+            model=model_name,
+            input_size_bytes=input_size,
+            output_size_bytes=0,
+            response_time_ms=response_time_ms,
+            status='error',
+            error_message=str(e),
+            npc_id=npc_id,
+            text_length=len(text),
+            voice_id=api_voice,
+        )
+        
+        raise

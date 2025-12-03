@@ -16,6 +16,48 @@ WORLD_LORE = [
     "A floresta entre Muldraugh e a rodovia 31W esconde acampamentos abandonados de pressa.",
     "Casas de subúrbio intactas escondem cadáveres amarrados às camas.",
 
+    # --- EXPANSÕES DE LOCAIS: MULDRAUGH ---
+    "Garagens de Muldraugh guardam veículos ligados no último instante, com portas abertas e faróis iluminando manchas secas no chão.",
+    "Casas pré-fabricadas de Muldraugh têm móveis virados e roupas infantis espalhadas como se famílias tivessem fugido em segundos.",
+    "A estrada próxima ao corpo de bombeiros de Muldraugh está marcada por arranhões profundos no asfalto, como se hordas fossem arrastadas ali.",
+    "A trilha ao norte de Muldraugh ainda exibe latas de comida abertas por facas militares e pegadas diferentes sobrepostas.",
+
+    # --- EXPANSÕES DE LOCAIS: WEST POINT ---
+    "As ruas de West Point têm lojas saqueadas parcialmente, como se algo tivesse interrompido os saqueadores antes de terminarem.",
+    "A ponte de West Point sobre o rio Ohio mostra marcas de tiros e sangue seco onde moradores tentaram bloquear hordas que atravessavam.",
+    "Restaurantes de West Point ainda têm mesas viradas e bandejas fossilizadas, com talheres cravados nas paredes após brigas desesperadas.",
+    "Bairros ao sul de West Point têm janelas travadas por dentro com móveis pesados, alguns ainda tremendo durante a madrugada.",
+
+    # --- EXPANSÕES DE LOCAIS: RIVERSIDE ---
+    "As mansões de Riverside exibem alarmes silenciosos piscando, mesmo sem energia, como se algo interno ainda tentasse reiniciar.",
+    "Perto do Country Club de Riverside, trilhas de terra mostram passos arrastados entrando e saindo de lagos rasos durante a noite.",
+    "As docas de Riverside têm barcos batendo ritmadamente contra o cais, confundindo sobreviventes que acham ser passos humanos.",
+    "Casas isoladas no bosque de Riverside têm portas traseiras quebradas para fora, como se moradores tivessem fugido em pânico.",
+
+    # --- EXPANSÕES DE LOCAIS: ROSEWOOD ---
+    "O presídio de Rosewood mantém luzes de emergência intermitentes alimentadas por um gerador soterrado ainda funcionando irregularmente.",
+    "As ruas residenciais de Rosewood mostram casas saqueadas múltiplas vezes, com paredes marcadas por tiros entre grupos rivais.",
+    "A delegacia de Rosewood tem portas reforçadas empurradas de dentro para fora, com marcas profundas de unhas humanas.",
+    "Ambulâncias capotadas bloqueiam ruas de Rosewood, com kits médicos abertos e pegadas ensanguentadas levando ao bosque.",
+
+    # --- EXPANSÕES DE LOCAIS: FLORESTA 31W ---
+    "A floresta entre Muldraugh e a rodovia 31W tem barracas rasgadas e cordas penduradas que balançam mesmo sem vento.",
+    "Acampamentos abandonados na trilha entre Muldraugh e a 31W mostram fogueiras apagadas há poucos dias e latas abertas por ferramentas militares.",
+    "Troncos da floresta na rota para a 31W têm símbolos esculpidos que sobreviventes dizem ser códigos usados por saqueadores.",
+    "À noite, a floresta entre Muldraugh e a 31W ecoa sons metálicos que parecem vir de veículos abandonados ou de algo preso dentro deles.",
+
+    # --- EXPANSÕES DE LOCAIS: SUBÚRBIOS ---
+    "Casas de subúrbio intactas exibem mesas postas com pratos limpos e comida fossilizada, como se moradores estivessem prestes a voltar.",
+    "Armários perfeitamente organizados escondem manchas de arrasto no chão, levando até camas onde corpos foram amarrados.",
+    "Fotografias em casas intactas mostram famílias sorrindo poucos dias antes do surto, com datas recentes impressas nos álbuns.",
+    "Algumas casas completamente preservadas têm caixas de remédios vazias e seringas espalhadas, sugerindo tentativas de tratar infectados antes do fim.",
+
+    # --- EXPANSÕES DE LOCAIS: ARMAZÉNS ---
+    "Armazéns ao sul de West Point têm portões amassados com fios de cabelo e fragmentos de unhas, como se algo enorme tentasse entrar.",
+    "Empilhadeiras tombadas nos armazéns do sul mostram que trabalhadores tentaram criar barricadas improvisadas antes de fugir.",
+    "Contêineres lacrados nos armazéns do sul ainda têm equipamentos de camping e ferramentas procuradas por sobreviventes até hoje.",
+    "Alguns contêineres nos armazéns vibram à noite, apesar de estarem trancados por dentro há meses.",
+
     # --- Zumbis ---
     "Zumbis se reúnem em portas como se lembrassem das chaves que não podem usar.",
     "Alguns zumbis carregam rádios quebrados presos ao corpo emitindo ruído constante.",

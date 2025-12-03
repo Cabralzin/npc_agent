@@ -1,0 +1,38 @@
+{
+  "Jason": {
+    "nome": "Jason",
+    "trust": 0.4,
+    "fear": 0.7,
+    "respect": 0.5,
+    "attachment": 0.0,
+    "hostility": 0.0,
+    "dependance": 0.0,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Raven avaliou a situação e alertou sobre os riscos de subir pelas paredes",
+        "impact": {
+          "trust": 0.0,
+          "fear": 0.0,
+          "respect": 0.0,
+          "attachment": 0.0,
+          "hostility": 0.0,
+          "dependance": 0.0
+        },
+        "timestamp": "2025-12-03T00:55:07.262545+00:00"
+      },
+      {
+        "event": "Raven compartilhou dicas com Jason sobre reduzir o barulho do carro, mas alertou sobre sua condução agressiva.",
+        "impact": {
+          "trust": -0.1,
+          "fear": 0.7,
+          "respect": 0.0,
+          "attachment": 0.0,
+          "hostility": 0.0,
+          "dependance": 0.0
+        },
+        "timestamp": "2025-12-03T01:18:41.232447+00:00"
+      }
+    ]
+  }
+}

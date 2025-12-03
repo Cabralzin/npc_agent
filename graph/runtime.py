@@ -276,8 +276,9 @@ class NPCGraph:
         # LLM obrigatório: não usar heurística
         data = None
         try:
-            harness = LLMHarness(model=os.getenv("NPC_KB_MODEL", "gpt-3.5-turbo"), temperature=0.2, max_retries=2, timeout=30)
-            raw = await harness.run(conv_payload)
+            from core.models_preset import NPC_KB_MODEL
+            harness = LLMHarness(model=NPC_KB_MODEL, temperature=0.2, max_retries=2, timeout=30)
+            raw = await harness.run(conv_payload, agent_name="auto_memorize", npc_id=self.npc_id)
         except Exception as e:
             self.logger.warning(f"auto_memorize: LLM failed, skipping memorization this turn: {e}")
             return

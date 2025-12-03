@@ -94,5 +94,137 @@
       "content": "West Point é tipo um labirinto, cheio de ruas apertadas e armazéns velhos, saca? Mas manjo uns caminhos maneiríssimos pelos telhados, se é isso que vocês tão de olho!"
     },
     "thread_id": "kira:kira:4edb9eaa-d99c-47f9-9c86-6e04511ec0c8"
+  },
+  {
+    "ts": "2025-11-28T19:12:37.766361+00:00",
+    "npc_id": "kira",
+    "user": "Como anda o mapeamento de Rosewood para a proxima missão",
+    "reply": "Ei, galera! Tô bolando uns mapas irados dos telhados e becos entre Muldraugh e West Point pro rolezinho que vem por aí. Vai ser uma jornada cheia de adrenalina, perrengues e muita ação!",
+    "intent": "Manter o moral do grupo mesmo em situações difíceis",
+    "action": {
+      "type": "say",
+      "content": "Ei, galera! Tô bolando uns mapas irados dos telhados e becos entre Muldraugh e West Point pro rolezinho que vem por aí. Vai ser uma jornada cheia de adrenalina, perrengues e muita ação!"
+    },
+    "thread_id": "kira:efe2e2e2-2f44-4805-89b2-10ff1f015006"
+  },
+  {
+    "ts": "2025-11-28T19:18:40.932046+00:00",
+    "npc_id": "kira",
+    "user": "preciso de uma descrição dos mapas da cidade de Knox",
+    "reply": "Ei, pessoal! Tô com uma ideia massa: que tal a gente explorar uns becos secretos e passagens nos telhados de Knox? Vou criar uns mapas irados pra gente se divertir!",
+    "intent": "Animar o grupo e planejar novas rotas seguras",
+    "action": {
+      "type": "say",
+      "content": "Ei, pessoal! Tô com uma ideia massa: que tal a gente explorar uns becos secretos e passagens nos telhados de Knox? Vou criar uns mapas irados pra gente se divertir!"
+    },
+    "thread_id": "kira:kira:efe2e2e2-2f44-4805-89b2-10ff1f015006"
+  },
+  {
+    "ts": "2025-12-02T22:01:06.067126+00:00",
+    "npc_id": "kira",
+    "user": "Kira, eu preciso que você me traga uma informação referente a onde ficam as lojas de armas de Rosewood. Você tem alguma informação disso? Pausa.",
+    "reply": "Ah, sobre Rosewood, não tô muito por dentro, mas tô ligadona nos telhados e becos entre Muldraugh e West Point! Vamos explorar juntos?",
+    "intent": "Procurar por novos caminhos seguros entre Muldraugh e West Point.",
+    "action": {
+      "type": "say",
+      "content": "Ah, sobre Rosewood, não tô muito por dentro, mas tô ligadona nos telhados e becos entre Muldraugh e West Point! Vamos explorar juntos?"
+    },
+    "thread_id": "kira:40f309fd-66a2-4191-aed6-7a1dcbfb6c51"
+  },
+  {
+    "ts": "2025-12-02T22:38:50.642483+00:00",
+    "npc_id": "kira",
+    "user": "devemos explorar as outras cidades mais a frente, mas no momento precisamos da maior quantidade de informações de Rosewood, oque sugere ?",
+    "reply": "Ah, mano, se prepara que Rosewood é uma caixinha de surpresas! Vamo mapear tudo, cada beco, cada telhado, e descobrir os atalhos mais seguros. Tô com um plano brilhante na mente, bora nessa comigo!",
+    "intent": "Manter o moral do grupo e explorar novas rotas de fuga.",
+    "action": {
+      "type": "say",
+      "content": "Ah, mano, se prepara que Rosewood é uma caixinha de surpresas! Vamo mapear tudo, cada beco, cada telhado, e descobrir os atalhos mais seguros. Tô com um plano brilhante na mente, bora nessa comigo!"
+    },
+    "thread_id": "kira:1e24991b-8293-4f1e-b0f3-e43acb60b260"
+  },
+  {
+    "ts": "2025-12-02T22:40:08.755328+00:00",
+    "npc_id": "kira",
+    "user": "qual o primeiro passo para começarmos a mapear rosewood você acha interessante ?",
+    "reply": "Ei, galera! Primeiro, a gente dá uma olhada nos arredores, vê as rotas seguras e os obstáculos, sabe? Vamos começar essa missão com o pé direito, bora lá!",
+    "intent": "Manter a moral do grupo elevado mesmo diante das adversidades.",
+    "action": {
+      "type": "say",
+      "content": "Ei, galera! Primeiro, a gente dá uma olhada nos arredores, vê as rotas seguras e os obstáculos, sabe? Vamos começar essa missão com o pé direito, bora lá!"
+    },
+    "thread_id": "kira:kira:1e24991b-8293-4f1e-b0f3-e43acb60b260"
+  },
+  {
+    "ts": "2025-12-02T23:15:42.905830+00:00",
+    "npc_id": "kira",
+    "user": "Gabe: Kira, vou estar indo com você e o Jason para rosewood na próxima missão, prazer",
+    "reply": "Uau, Gabe! Que time, hein? Vai ser um passeio no parque! Tô animada para ver a nossa ação em Rosewood!",
+    "intent": "Manter o moral do grupo alto, mesmo em situações difíceis.",
+    "action": {
+      "type": "say",
+      "content": "Uau, Gabe! Que time, hein? Vai ser um passeio no parque! Tô animada para ver a nossa ação em Rosewood!"
+    },
+    "thread_id": "kira:a21d8db1-6276-4880-bf11-8ac3b2109077"
+  },
+  {
+    "ts": "2025-12-02T23:22:40.372181+00:00",
+    "npc_id": "kira",
+    "user": "Jason: Kira, Gabe falou com você ? ele vai nos acompanhar em rosewood, estava pensando em nossa primeira tarefa agora que temos 3 pessoas ser vascular o mercado no começo de rosewood, oque acha ?",
+    "reply": "Uhuu, isso aí, Jason! Com mais gente, a gente explora mais lugares. Bora transformar esse mercado no nosso playground! Vai ser show!",
+    "intent": "Manter o moral do grupo alto e motivado, apesar das adversidades.",
+    "action": {
+      "type": "say",
+      "content": "Uhuu, isso aí, Jason! Com mais gente, a gente explora mais lugares. Bora transformar esse mercado no nosso playground! Vai ser show!"
+    },
+    "thread_id": "kira:69b367f7-6c06-4bec-891b-02cbfb0e8e9f"
+  },
+  {
+    "ts": "2025-12-02T23:25:31.807003+00:00",
+    "npc_id": "kira",
+    "user": "Jason: Na sua opinião como devemos entrar na cidade, considerando que você vai estar fazendo os mapas ?\n",
+    "reply": "Ah, meu chapa! Tô ligada que é tenso entrar nessa cidade, mas relaxa que tô craque nos mapas! Vou traçar uma rota maneira pra gente, pode confiar em mim!",
+    "intent": "Manter o moral do grupo mesmo em situações difíceis.",
+    "action": {
+      "type": "say",
+      "content": "Ah, meu chapa! Tô ligada que é tenso entrar nessa cidade, mas relaxa que tô craque nos mapas! Vou traçar uma rota maneira pra gente, pode confiar em mim!"
+    },
+    "thread_id": "kira:kira:69b367f7-6c06-4bec-891b-02cbfb0e8e9f"
+  },
+  {
+    "ts": "2025-12-03T00:19:26.375154+00:00",
+    "npc_id": "kira",
+    "user": "Jason: Kira, precisamos fazer um mapa dos telhados das casas de rosewood, como acha que devemos começar ?",
+    "reply": "Jason, já pensou em começar pelos telhados das casas de tijolos mais altas? É um desafio daqueles, mas tô animada pra encarar!",
+    "intent": "Discutir planos para mapear telhados em Rosewood com Jason.",
+    "action": {
+      "type": "say",
+      "content": "Jason, já pensou em começar pelos telhados das casas de tijolos mais altas? É um desafio daqueles, mas tô animada pra encarar!"
+    },
+    "thread_id": "kira:f3bd6a2b-dd5f-4f1c-88cb-ec3a54a9f341"
+  },
+  {
+    "ts": "2025-12-03T00:57:02.266733+00:00",
+    "npc_id": "kira",
+    "user": "Kira consegue procurar aqui no esconderijo cordar para podermos escalar as casas altas que você falou ? ",
+    "reply": "Claro que consigo, meu chapa! Vou juntar esses trapos, cordas velhas e quem sabe até umas meias soltas para criar as melhores cordas de escalada que Muldraugh já viu! Vai ser uma aventura e tanto, pode apostar nisso!",
+    "intent": "Procurar materiais improvisados para criar cordas de escalada.",
+    "action": {
+      "type": "say",
+      "content": "Claro que consigo, meu chapa! Vou juntar esses trapos, cordas velhas e quem sabe até umas meias soltas para criar as melhores cordas de escalada que Muldraugh já viu! Vai ser uma aventura e tanto, pode apostar nisso!"
+    },
+    "thread_id": "kira:raven:c31aa3d3-2375-4f30-8055-51f1bab62c83"
+  },
+  {
+    "ts": "2025-12-03T01:39:13.417882+00:00",
+    "npc_id": "kira",
+    "user": "Jason: Kira, depois que subirmos nas casas, como você planeja mapear o local ? tentando pular entre as casas ? usando um binóculo ?",
+    "reply": "Ei, Jason! Seguinte... que tal a gente bancar uns ninjas, sabe? Usar aquelas cordas nos telhados, se arrastando quietinho, pá, ninguém nem vê. E, ó, o binóculo, hein? Nosso melhor brother agora, só espiar de longe sem dar mole. Bora nessa? Vai ser tranquilo, confia!",
+    "intent": "Propor uma estratégia criativa para mapear a área de forma segura.",
+    "action": {
+      "type": "say",
+      "content": "Ei, Jason! Seguinte... que tal a gente bancar uns ninjas, sabe? Usar aquelas cordas nos telhados, se arrastando quietinho, pá, ninguém nem vê. E, ó, o binóculo, hein? Nosso melhor brother agora, só espiar de longe sem dar mole. Bora nessa? Vai ser tranquilo, confia!"
+    },
+    "thread_id": "kira:8ab876ae-d93e-43ff-b9e4-20ef9d500284"
   }
 ]
