@@ -226,5 +226,53 @@
       "content": "Ei, Jason! Seguinte... que tal a gente bancar uns ninjas, sabe? Usar aquelas cordas nos telhados, se arrastando quietinho, pá, ninguém nem vê. E, ó, o binóculo, hein? Nosso melhor brother agora, só espiar de longe sem dar mole. Bora nessa? Vai ser tranquilo, confia!"
     },
     "thread_id": "kira:8ab876ae-d93e-43ff-b9e4-20ef9d500284"
+  },
+  {
+    "ts": "2025-12-03T22:06:30.867743+00:00",
+    "npc_id": "kira",
+    "user": "Oi, tudo bem? Me fala mais sobre vocês, coisas que você gosta de fazer.",
+    "reply": "Ah, beleza! Então, eu curto demais explorar telhado, sabe? Fico meio que brincando de gato lá em cima, às vezes finjo que o chão é lava... é, coisa de doido, né? E, ah, desenhar mapa é mó vibe também, parece que tô montando um quebra-cabeça gigante só meu. E tu, faz o quê pra se divertir por aqui?",
+    "intent": "Compartilhar informações pessoais de forma leve e manter a conexão social.",
+    "action": {
+      "type": "say",
+      "content": "Ah, beleza! Então, eu curto demais explorar telhado, sabe? Fico meio que brincando de gato lá em cima, às vezes finjo que o chão é lava... é, coisa de doido, né? E, ah, desenhar mapa é mó vibe também, parece que tô montando um quebra-cabeça gigante só meu. E tu, faz o quê pra se divertir por aqui?"
+    },
+    "thread_id": "kira:6ac7da3e-15f7-44a6-b349-1fe00e74e63a"
+  },
+  {
+    "ts": "2025-12-03T22:08:47.303508+00:00",
+    "npc_id": "kira",
+    "user": "Eu gosto de dormir, eu gosto de ler e brincar com os meus gatos.",
+    "reply": "Ei, manda bem demais! Ler é tipo... nossa, a fuga perfeita quando a cabeça começa a pirar, né? E gato, então, bicho... melhor companhia pra segurar a barra quando tudo tá meio esquisito. Dormir também, hein, não dá pra vacilar com isso. A gente precisa tá ligeira, pronta pra qualquer coisa. Ah, e ó... se um dia cê precisar de uma mão pra atravessar essa ponte doida ou desviar de umas armadilha de árvore, só chamar, tá? Sério mesmo.",
+    "intent": "Manter-se positiva e alerta, refletindo sobre estratégias de sobrevivência.",
+    "action": {
+      "type": "say",
+      "content": "Ei, manda bem demais! Ler é tipo... nossa, a fuga perfeita quando a cabeça começa a pirar, né? E gato, então, bicho... melhor companhia pra segurar a barra quando tudo tá meio esquisito. Dormir também, hein, não dá pra vacilar com isso. A gente precisa tá ligeira, pronta pra qualquer coisa. Ah, e ó... se um dia cê precisar de uma mão pra atravessar essa ponte doida ou desviar de umas armadilha de árvore, só chamar, tá? Sério mesmo."
+    },
+    "thread_id": "kira:kira:6ac7da3e-15f7-44a6-b349-1fe00e74e63a"
+  },
+  {
+    "ts": "2025-12-03T22:11:55.861374+00:00",
+    "npc_id": "kira",
+    "user": "Okira, você tem algum animal preferido?",
+    "reply": "Ah, nossa, raposa é meu bicho, viu? Elas são rápidas, espertas, tipo... sempre dão um jeito, sabe? Acho que eu me viraria legal num bando de raposa, hah! E cê? Tem um bicho favorito ou vai me deixar falando sozinha aqui?",
+    "intent": "Manter a conversa leve e compartilhar seu animal preferido para se conectar com os outros.",
+    "action": {
+      "type": "say",
+      "content": "Ah, nossa, raposa é meu bicho, viu? Elas são rápidas, espertas, tipo... sempre dão um jeito, sabe? Acho que eu me viraria legal num bando de raposa, hah! E cê? Tem um bicho favorito ou vai me deixar falando sozinha aqui?"
+    },
+    "thread_id": "kira:kira:kira:6ac7da3e-15f7-44a6-b349-1fe00e74e63a"
+  },
+  {
+    "ts": "2025-12-03T22:14:48.860638+00:00",
+    "npc_id": "kira",
+    "user": "Kira, eu gosto de corvo, porque eu acho ele um bicho muito inteligente e interativo. O que faz você gostar de raposas?",
+    "reply": "Ah, raposas são demais, né? Tipo, elas têm aquele jeitinho esperto, meio safado... e são super criativas! Se eu pudesse, nossa, eu ia ter uma raposa só pra ver as encrencas que a gente ia arrumar junto, sério! E os olhos delas? Cara, parece que tão sempre tramando alguma coisa, sabe? Bem marotas mesmo!",
+    "intent": "Engajar na conversa sobre animais com entusiasmo e curiosidade, destacando sua afinidade por raposas.",
+    "action": {
+      "type": "say",
+      "content": "Ah, raposas são demais, né? Tipo, elas têm aquele jeitinho esperto, meio safado... e são super criativas! Se eu pudesse, nossa, eu ia ter uma raposa só pra ver as encrencas que a gente ia arrumar junto, sério! E os olhos delas? Cara, parece que tão sempre tramando alguma coisa, sabe? Bem marotas mesmo!"
+    },
+    "thread_id": "kira:kira:kira:kira:6ac7da3e-15f7-44a6-b349-1fe00e74e63a"
   }
 ]

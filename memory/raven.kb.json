@@ -114,7 +114,7 @@
         "confidence": 0.9,
         "evidence": "eu precisava de uma descrição sobre quais seriam as melhores rodas para a gente poder ir na missão em Rosewood amanhã."
       },
-      "last_updated": "2025-11-28T19:20:28.462521+00:00"
+      "last_updated": "2025-12-03T22:16:43.317960+00:00"
     },
     {
       "title": "Redução de ruído no carro",
@@ -125,6 +125,26 @@
         "evidence": "vou precisar de umas dicas de como fazer com que o carro faça menos barulho"
       },
       "last_updated": "2025-12-03T01:18:23.548989+00:00"
+    },
+    {
+      "title": "Farol para iluminação de grandes áreas por curtos períodos",
+      "summary": "Raven considera ideal um farol potente, que ilumine amplas áreas, mas que possa ser usado por períodos curtos para economizar energia e evitar exposição prolongada na Zona Knox.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "Jason: Raven, preciso saber também qual melhor tipo de farol, precisava de algo que pudesse iluminar grandes áreas, mas por pouco periodos"
+      },
+      "last_updated": "2025-12-03T02:49:44.611524+00:00"
+    },
+    {
+      "title": "Motor para missão em Rosewood",
+      "summary": "Raven considera essencial um motor robusto e confiável, que suporte terrenos acidentados e uso intenso, priorizando eficiência e facilidade de manutenção para a missão em Rosewood.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.95,
+        "evidence": "Jason: Raven consegui os pneus pro carro, agora queria sua opnião de um motor bom para utilizar na missão em rosewood"
+      },
+      "last_updated": "2025-12-05T16:57:03.194358+00:00"
     }
   ]
 }

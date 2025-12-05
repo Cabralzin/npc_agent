@@ -1,0 +1,26 @@
+{
+  "Jason": {
+    "nome": "Jason",
+    "trust": 0.55,
+    "fear": 0.0,
+    "respect": 0.55,
+    "attachment": 0.05,
+    "hostility": 0.0,
+    "dependance": 0.05,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Ezra sugere um plano cauteloso para a missão de suprimentos, mostrando preocupação e empatia com a segurança do grupo.",
+        "impact": {
+          "trust": 0.05,
+          "fear": 0.0,
+          "respect": 0.05,
+          "attachment": 0.05,
+          "hostility": 0.0,
+          "dependance": 0.05
+        },
+        "timestamp": "2025-12-03T03:05:46.925771+00:00"
+      }
+    ]
+  }
+}

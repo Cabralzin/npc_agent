@@ -178,5 +178,65 @@
       "content": "Se quer evitar chamar a atenção dos 'amigos' por aí, vai ter que dar uma geral no escapamento e calibrar os pneus direito. Mas não adianta nada se você não controlar essa sua mania de acelerar feito um louco."
     },
     "thread_id": "raven:48f26afd-cc57-41fc-a7d9-a5916348c9f6"
+  },
+  {
+    "ts": "2025-12-03T02:50:11.885596+00:00",
+    "npc_id": "raven",
+    "user": "Jason: Raven, preciso saber também qual melhor tipo de farol, precisava de algo que pudesse iluminar grandes áreas, mas por pouco periodos",
+    "reply": "Vai de LED, Jason. Ilumina bem, não queima rápido. Só... olho no barulho do gerador, tá? Menos luz pra bicho ruim, mas o som... chama atenção igual.",
+    "intent": "Orientar Jason sobre a escolha do farol, considerando segurança e eficiência.",
+    "action": {
+      "type": "say",
+      "content": "Vai de LED, Jason. Ilumina bem, não queima rápido. Só... olho no barulho do gerador, tá? Menos luz pra bicho ruim, mas o som... chama atenção igual."
+    },
+    "thread_id": "raven:edd49e96-8841-429a-9d9f-012e4d8b3a5d"
+  },
+  {
+    "ts": "2025-12-03T02:55:59.534580+00:00",
+    "npc_id": "raven",
+    "user": "Jason: Ok Leds, escapamento novo.. tem algum produto que indica para colocar no motor para reduzir o barulho ?",
+    "reply": "Jason, até tem uns produtos por aí, mas ó… o que segura mesmo é mexer nas válvulas e botar um abafador decente. Cê quer que eu dê uma olhada nisso pra ti?\n\n{\n  \"fala\": \"Jason, até tem uns produtos por aí, mas ó… o que segura mesmo é mexer nas válvulas e botar um abafador decente. Cê quer que eu dê uma olhada nisso pra ti?\",\n  \"justificativa\": \"Deixei o tom mais informal e direto, encaixando mais com a personalidade e o jeito sarcástico e prático da Raven. Usei expressões mais orais, cortei palavras desnecessárias e deixei a frase pronta pra ser dita em voz alta. O uso de 'Cê' e 'pra ti' aumenta a naturalidade e aproxima a fala do estilo da personagem.\"\n}",
+    "intent": "Ajudar Jason com conselhos técnicos sobre redução de ruído de motor.",
+    "action": {
+      "type": "say",
+      "content": "Jason, até tem uns produtos por aí, mas ó… o que segura mesmo é mexer nas válvulas e botar um abafador decente. Cê quer que eu dê uma olhada nisso pra ti?\n\n{\n  \"fala\": \"Jason, até tem uns produtos por aí, mas ó… o que segura mesmo é mexer nas válvulas e botar um abafador decente. Cê quer que eu dê uma olhada nisso pra ti?\",\n  \"justificativa\": \"Deixei o tom mais informal e direto, encaixando mais com a personalidade e o jeito sarcástico e prático da Raven. Usei expressões mais orais, cortei palavras desnecessárias e deixei a frase pronta pra ser dita em voz alta. O uso de 'Cê' e 'pra ti' aumenta a naturalidade e aproxima a fala do estilo da personagem.\"\n}"
+    },
+    "thread_id": "raven:0e01c44d-d3c7-48e7-8c95-9c7211ac1220"
+  },
+  {
+    "ts": "2025-12-03T02:58:21.925729+00:00",
+    "npc_id": "raven",
+    "user": "Jason: quando tiver um tempo seria legal dar uma olhada, estou pensando no que mais poderiamos fazer , alguma sugestão ?",
+    "reply": "Posso fuçar, sim... mas, ó, não crio expectativa, não. Se cê quer mesmo ideia, sempre tem umas tralhas nos galpões lá de West Point. Não é grande coisa, mas... quebra um galho, né.\n\n{\n  \"fala\": \"Posso fuçar, sim... mas, ó, não crio expectativa, não. Se cê quer mesmo ideia, sempre tem umas tralhas nos galpões lá de West Point. Não é grande coisa, mas... quebra um galho, né.\",\n  \"justificativa\": \"Deixei mais oral, com hesitações e gírias leves, pra soar mais natural e direta. Quebrei frases e incluí um tom realista e um pouco resignado, combinando com o estilo dela e o contexto de confiança moderada.\"\n}",
+    "intent": "Considerar a proposta de Jason e sugerir opções viáveis.",
+    "action": {
+      "type": "say",
+      "content": "Posso fuçar, sim... mas, ó, não crio expectativa, não. Se cê quer mesmo ideia, sempre tem umas tralhas nos galpões lá de West Point. Não é grande coisa, mas... quebra um galho, né.\n\n{\n  \"fala\": \"Posso fuçar, sim... mas, ó, não crio expectativa, não. Se cê quer mesmo ideia, sempre tem umas tralhas nos galpões lá de West Point. Não é grande coisa, mas... quebra um galho, né.\",\n  \"justificativa\": \"Deixei mais oral, com hesitações e gírias leves, pra soar mais natural e direta. Quebrei frases e incluí um tom realista e um pouco resignado, combinando com o estilo dela e o contexto de confiança moderada.\"\n}"
+    },
+    "thread_id": "raven:2e932973-6150-40f1-adc1-9ada1e25080e"
+  },
+  {
+    "ts": "2025-12-03T22:17:15.167340+00:00",
+    "npc_id": "raven",
+    "user": "Raven, aqui é o Jason. Ontem a gente estava conversando sobre a questão dos jipes e dos leds que a gente ia utilizar no carro, agora eu preciso saber que tipo de pneu que você indica, porque quando a gente entrar em Rosewood a gente vai procurar esses pneus.",
+    "reply": "Pega pneu com banda de rodagem reforçada, tá? Se achar off-road, melhor ainda, porque aquela estrada ali é puro buraco e lama. Proteção lateral ajuda se pegar destroço ou pedra. Run-flat seria um sonho, mas... é, boa sorte achando um desses por aqui.",
+    "intent": "Responder a Jason sobre as especificações dos pneus necessários para segurança.",
+    "action": {
+      "type": "say",
+      "content": "Pega pneu com banda de rodagem reforçada, tá? Se achar off-road, melhor ainda, porque aquela estrada ali é puro buraco e lama. Proteção lateral ajuda se pegar destroço ou pedra. Run-flat seria um sonho, mas... é, boa sorte achando um desses por aqui."
+    },
+    "thread_id": "raven:kira:kira:kira:kira:6ac7da3e-15f7-44a6-b349-1fe00e74e63a"
+  },
+  {
+    "ts": "2025-12-05T16:56:59.958321+00:00",
+    "npc_id": "raven",
+    "user": "Jason: Raven consegui os pneus pro carro, agora queria sua opnião de um motor bom para utilizar na missão em rosewood",
+    "reply": "Bom... olha, Jason, se a gente vai encarar Rosewood, precisa de motor que não desmaia no primeiro buraco, né? Vai de V8. Durão, aguenta o rojão. Agora, se trouxer motor que bebe óleo igual cachorro no verão... aí não tem santo que salve, não.",
+    "intent": "Dar uma opinião técnica sobre qual motor escolher para a missão.",
+    "action": {
+      "type": "say",
+      "content": "Bom... olha, Jason, se a gente vai encarar Rosewood, precisa de motor que não desmaia no primeiro buraco, né? Vai de V8. Durão, aguenta o rojão. Agora, se trouxer motor que bebe óleo igual cachorro no verão... aí não tem santo que salve, não."
+    },
+    "thread_id": "raven:0a0206be-6e6c-49a4-8b2b-530d6eff532e"
   }
 ]

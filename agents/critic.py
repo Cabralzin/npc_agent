@@ -199,6 +199,9 @@ async def critic(state: NPCState) -> NPCState:
     text = await _llm.run(prompt)
     text = (text or "").strip()
 
+    # Log do texto bruto recebido (apenas para debug)
+    _logger.debug("critic.raw_response: %s", text[:200] + "..." if len(text) > 200 else text)
+
     # Tenta parsear como JSON (se houver alterações)
     final = ""
     justificativa = ""
@@ -210,32 +213,95 @@ async def critic(state: NPCState) -> NPCState:
             last_backtick = text.rfind("```")
             if first_newline != -1 and last_backtick != -1:
                 text = text[first_newline + 1:last_backtick].strip()
+            # Remove "json" se estiver no início do code block
+            if text.lower().startswith("json"):
+                text = text[4:].strip()
 
-        # Tenta parsear como JSON
-        parsed = json.loads(text)
-        if isinstance(parsed, dict):
-            final = parsed.get("fala", "").strip().strip('"').strip("'")
-            justificativa = parsed.get("justificativa", "").strip()
+        # Tenta encontrar JSON no texto (pode vir junto com texto antes)
+        # Procura por um objeto JSON válido no texto
+        json_start = text.find("{")
+        json_end = text.rfind("}")
+
+        if json_start >= 0 and json_end > json_start:
+            # Extrai o JSON
+            json_text = text[json_start:json_end + 1]
+            try:
+                parsed = json.loads(json_text)
+                if isinstance(parsed, dict):
+                    final = parsed.get("fala", "").strip().strip('"').strip("'")
+                    justificativa = parsed.get("justificativa", "").strip()
+                    # IMPORTANTE: Se encontrou JSON válido, usa APENAS a fala extraída do JSON
+                    # Ignora qualquer texto antes do JSON (que pode ser a fala repetida)
+                else:
+                    # Se não for dict, usa o texto antes do JSON (se houver)
+                    if json_start > 0:
+                        final = text[:json_start].strip().strip('"').strip("'")
+                    else:
+                        final = text.strip().strip('"').strip("'")
+            except json.JSONDecodeError:
+                # Se o JSON não for válido, tenta parsear o texto inteiro
+                try:
+                    parsed = json.loads(text)
+                    if isinstance(parsed, dict):
+                        final = parsed.get("fala", "").strip().strip('"').strip("'")
+                        justificativa = parsed.get("justificativa", "").strip()
+                    else:
+                        final = text.strip().strip('"').strip("'")
+                except json.JSONDecodeError:
+                    # Se não conseguir parsear, usa o texto antes do JSON (se houver)
+                    if json_start > 0:
+                        final = text[:json_start].strip().strip('"').strip("'")
+                    else:
+                        final = text.strip().strip('"').strip("'")
         else:
-            # Se não for dict, trata como texto simples
-            final = text.strip().strip('"').strip("'")
-    except (json.JSONDecodeError, AttributeError):
-        # Se não for JSON válido, trata como texto simples (sem alterações)
+            # Não encontrou JSON, tenta parsear o texto inteiro
+            try:
+                parsed = json.loads(text)
+                if isinstance(parsed, dict):
+                    final = parsed.get("fala", "").strip().strip('"').strip("'")
+                    justificativa = parsed.get("justificativa", "").strip()
+                else:
+                    final = text.strip().strip('"').strip("'")
+            except json.JSONDecodeError:
+                # Se não for JSON válido, trata como texto simples (sem alterações)
+                final = text.strip().strip('"').strip("'")
+    except Exception as e:
+        # Em caso de qualquer erro, usa o texto como está
+        _logger.warning(f"critic.parse_error: {e}, usando texto completo como fala")
         final = text.strip().strip('"').strip("'")
 
     _logger.info("critic.out: %s\n", final)
     if justificativa:
         _logger.info("critic.justificativa: %s\n", justificativa)
 
+    # Garante que final não contenha justificativa ou JSON
+    # Remove qualquer JSON que possa ter ficado no final
+    if final and "{" in final:
+        # Se ainda contém JSON, tenta extrair apenas a parte antes do JSON
+        json_pos = final.find("{")
+        if json_pos > 0:
+            final = final[:json_pos].strip()
+        else:
+            # Se o JSON está no início, tenta extrair do JSON
+            json_end = final.find("}")
+            if json_end > 0:
+                try:
+                    json_text = final[:json_end + 1]
+                    parsed = json.loads(json_text)
+                    if isinstance(parsed, dict) and "fala" in parsed:
+                        final = parsed.get("fala", "").strip().strip('"').strip("'")
+                except json.JSONDecodeError:
+                    pass
+
     # Comparação: candidate vs final
     _logger.info("COMPARAÇÃO:\n")
     _logger.info("dialogue.candidate: %s", reply)
     _logger.info("critic.final: %s\n", final)
 
-    # fala final no scratch
+    # fala final no scratch (já limpa, sem JSON ou justificativa)
     state["scratch"]["final_reply"] = final
 
-    # gera áudio em memória (não salva em disco)
+    # gera áudio em memória (não salva em disco) - APENAS a fala limpa
     audio_bytes = None
     try:
         npc_id = state.get("npc_id")
@@ -243,7 +309,7 @@ async def critic(state: NPCState) -> NPCState:
     except Exception as e:
         _logger.exception("critic.tts_error: %s", e)
 
-    # ação final para o runtime
+    # ação final para o runtime - APENAS a fala, sem justificativa
     action = {
         "type": "say",
         "content": final,

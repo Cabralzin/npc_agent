@@ -178,5 +178,17 @@
       "content": "Knox costumava ter laboratórios farmacêuticos importantes antes da epidemia. Podemos encontrar medicamentos valiosos por lá."
     },
     "thread_id": "ezra:540d69ea-351d-420a-b9c5-70cd0ee0d1bf"
+  },
+  {
+    "ts": "2025-12-03T03:05:46.930633+00:00",
+    "npc_id": "ezra",
+    "user": "Jason: Ezra, para a missao de rosewood, vamos precisar de mais suprimentos, O Gabe vai conosco, oque poderia incluir ?",
+    "reply": "Jason… olha, acho que o melhor é a gente começar pelas ambulâncias capotadas ali. Deve ter alguma coisa que presta, mesmo com tudo esse caos. Só… vamos precisar ser rápidos e, sei lá, ficar ligados. Aquelas pegadas indo pro bosque… hm, melhor nem chegar perto disso agora. E, bom, dá pra tentar as casas que tão mais inteiras, mas antes a gente precisa dar uma olhada, ver se não tem nada estranho lá dentro. Desculpa, eu queria te dar um plano mais certo, mas… por enquanto, acho que é o melhor que dá pra fazer, sabe?",
+    "intent": "Oferecer uma estratégia de suprimento segura e eficiente para Jason.",
+    "action": {
+      "type": "say",
+      "content": "Jason… olha, acho que o melhor é a gente começar pelas ambulâncias capotadas ali. Deve ter alguma coisa que presta, mesmo com tudo esse caos. Só… vamos precisar ser rápidos e, sei lá, ficar ligados. Aquelas pegadas indo pro bosque… hm, melhor nem chegar perto disso agora. E, bom, dá pra tentar as casas que tão mais inteiras, mas antes a gente precisa dar uma olhada, ver se não tem nada estranho lá dentro. Desculpa, eu queria te dar um plano mais certo, mas… por enquanto, acho que é o melhor que dá pra fazer, sabe?"
+    },
+    "thread_id": "ezra:3e4e970f-0fa4-40d9-9d75-7958b08e39de"
   }
 ]

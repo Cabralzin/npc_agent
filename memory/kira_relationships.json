@@ -106,5 +106,101 @@
         "timestamp": "2025-12-03T00:57:02.261434+00:00"
       }
     ]
+  },
+  "Oi": {
+    "nome": "Oi",
+    "trust": 0.55,
+    "fear": 0.0,
+    "respect": 0.52,
+    "attachment": 0.05,
+    "hostility": 0.0,
+    "dependance": 0.0,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Kira compartilhou seus hobbies e interesses de forma leve e aberta, fortalecendo a conexão social.",
+        "impact": {
+          "trust": 0.05,
+          "fear": 0.0,
+          "respect": 0.02,
+          "attachment": 0.05,
+          "hostility": 0.0,
+          "dependance": 0.0
+        },
+        "timestamp": "2025-12-03T22:06:30.860490+00:00"
+      }
+    ]
+  },
+  "Jogador": {
+    "nome": "Jogador",
+    "trust": 0.55,
+    "fear": 0.0,
+    "respect": 0.52,
+    "attachment": 0.1,
+    "hostility": 0.0,
+    "dependance": 0.05,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Kira reconheceu interesses pessoais do personagem e ofereceu ajuda para sobrevivência, reforçando vínculo positivo.",
+        "impact": {
+          "trust": 0.05,
+          "fear": 0.0,
+          "respect": 0.02,
+          "attachment": 0.1,
+          "hostility": 0.0,
+          "dependance": 0.05
+        },
+        "timestamp": "2025-12-03T22:08:47.297454+00:00"
+      }
+    ]
+  },
+  "Okira": {
+    "nome": "Okira",
+    "trust": 0.55,
+    "fear": 0.0,
+    "respect": 0.55,
+    "attachment": 0.05,
+    "hostility": 0.0,
+    "dependance": 0.0,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Kira compartilhou seu animal preferido e tentou engajar Okira em uma conversa descontraída.",
+        "impact": {
+          "trust": 0.05,
+          "fear": 0.0,
+          "respect": 0.05,
+          "attachment": 0.05,
+          "hostility": 0.0,
+          "dependance": 0.0
+        },
+        "timestamp": "2025-12-03T22:11:55.856211+00:00"
+      }
+    ]
+  },
+  "Kira": {
+    "nome": "Kira",
+    "trust": 0.55,
+    "fear": 0.0,
+    "respect": 0.55,
+    "attachment": 0.05,
+    "hostility": 0.0,
+    "dependance": 0.0,
+    "betrayal_memory": "",
+    "interaction_history": [
+      {
+        "event": "Kira respondeu com entusiasmo e curiosidade sobre sua afinidade por raposas na conversa sobre animais.",
+        "impact": {
+          "trust": 0.05,
+          "fear": 0.0,
+          "respect": 0.05,
+          "attachment": 0.05,
+          "hostility": 0.0,
+          "dependance": 0.0
+        },
+        "timestamp": "2025-12-03T22:14:48.854102+00:00"
+      }
+    ]
   }
 }

@@ -1,12 +1,12 @@
 {
   "Jason": {
     "nome": "Jason",
-    "trust": 0.4,
-    "fear": 0.7,
-    "respect": 0.5,
-    "attachment": 0.0,
+    "trust": 0.58,
+    "fear": 0.6,
+    "respect": 0.54,
+    "attachment": 0.07,
     "hostility": 0.0,
-    "dependance": 0.0,
+    "dependance": 0.03,
     "betrayal_memory": "",
     "interaction_history": [
       {
@@ -32,6 +32,66 @@
           "dependance": 0.0
         },
         "timestamp": "2025-12-03T01:18:41.232447+00:00"
+      },
+      {
+        "event": "Raven aconselhou Jason sobre o melhor tipo de farol, enfatizando a importância de reduzir o barulho do gerador para evitar atrair perigos.",
+        "impact": {
+          "trust": 0.05,
+          "fear": -0.02,
+          "respect": 0.03,
+          "attachment": 0.05,
+          "hostility": 0.0,
+          "dependance": 0.0
+        },
+        "timestamp": "2025-12-03T02:50:11.881389+00:00"
+      },
+      {
+        "event": "Raven ofereceu ajuda prática e direta para Jason, sugerindo uma solução efetiva para o problema do motor.",
+        "impact": {
+          "trust": 0.03,
+          "fear": -0.03,
+          "respect": 0.02,
+          "attachment": 0.02,
+          "hostility": 0.0,
+          "dependance": 0.02
+        },
+        "timestamp": "2025-12-03T02:55:59.530047+00:00"
+      },
+      {
+        "event": "Raven aceitou ajudar Jason com sugestões práticas, mantendo um tom cauteloso e realista.",
+        "impact": {
+          "trust": 0.02,
+          "fear": -0.02,
+          "respect": 0.01,
+          "attachment": 0.0,
+          "hostility": 0.0,
+          "dependance": 0.01
+        },
+        "timestamp": "2025-12-03T02:58:21.919671+00:00"
+      },
+      {
+        "event": "Raven forneceu conselhos técnicos detalhados sobre pneus reforçados para veículos, reforçando a utilidade prática da colaboração com Jason.",
+        "impact": {
+          "trust": 0.05,
+          "fear": 0.0,
+          "respect": 0.02,
+          "attachment": 0.05,
+          "hostility": 0.0,
+          "dependance": 0.02
+        },
+        "timestamp": "2025-12-03T22:17:15.161898+00:00"
+      },
+      {
+        "event": "Raven aconselha Jason sobre a escolha do motor para a missão, mostrando conhecimento e preocupação prática.",
+        "impact": {
+          "trust": 0.03,
+          "fear": -0.03,
+          "respect": 0.02,
+          "attachment": 0.02,
+          "hostility": 0.0,
+          "dependance": 0.01
+        },
+        "timestamp": "2025-12-05T16:56:59.945907+00:00"
       }
     ]
   }

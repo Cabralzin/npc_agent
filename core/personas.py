@@ -111,7 +111,7 @@ RAVEN = Persona(
     ],
     voice_id="raven_01",
     voice_gender="female",
-    voice_accent="americano interiorano (Kentucky)",
+    voice_accent="haitiano pesado com sotaque francês",
     voice_style="seca, humor ácido, fala cansada",
     voice_pitch="baixo",
     voice_speed="médio",

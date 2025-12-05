@@ -40,6 +40,16 @@
         "evidence": "Ezra vou sair com a Raven para pegar equipamentos e ir ate rosewood, a Kira ja me deu um mapa da região"
       },
       "last_updated": "2025-11-19T17:21:42.777553+00:00"
+    },
+    {
+      "title": "Gabe",
+      "summary": "Companheiro que irá acompanhar na missão para Rosewood, junto com Jason e Raven",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "O Gabe vai conosco"
+      },
+      "last_updated": "2025-12-03T03:05:06.370704+00:00"
     }
   ],
   "places": [

@@ -1,0 +1,16 @@
+timestamp,service_type,model,input_size_bytes,output_size_bytes,input_duration_seconds,output_duration_seconds,text_length,response_time_ms,status,error_message,npc_id,voice_id,language
+2025-12-02T23:50:08.580010,tts,gpt-4o-mini-tts,154,206592,,12.912,148,5300.69,success,,raven,alloy,
+2025-12-02T23:55:56.165148,tts,gpt-4o-mini-tts,685,336000,,21.0,662,6738.94,success,,raven,alloy,
+2025-12-02T23:58:18.889988,tts,gpt-4o-mini-tts,633,383232,,23.952,608,7301.67,success,,raven,alloy,
+2025-12-03T00:05:43.429551,tts,gpt-4o-mini-tts,539,619392,,38.712,519,8686.11,success,,ezra,alloy,
+2025-12-03T19:05:54.117285,transcription,whisper-1,205276,73,12.82975,,71,2685.16,success,,kira,,pt
+2025-12-03T19:06:27.047956,tts,gpt-4o-mini-tts,312,304128,,19.008,298,3509.3,success,,kira,alloy,
+2025-12-03T19:07:23.486870,transcription,whisper-1,205276,64,12.82975,,64,2009.69,success,,kira,,pt
+2025-12-03T19:08:44.167211,tts,gpt-4o-mini-tts,452,440064,,27.504,435,4943.13,success,,kira,alloy,
+2025-12-03T19:11:25.916429,transcription,whisper-1,129756,40,8.10975,,39,1441.32,success,,kira,,pt
+2025-12-03T19:11:53.184085,tts,gpt-4o-mini-tts,225,254592,,15.912,220,3667.53,success,,kira,alloy,
+2025-12-03T19:13:33.697438,transcription,whisper-1,300636,119,18.78975,,118,5508.7,success,,kira,,pt
+2025-12-03T19:13:59.719117,tts,gpt-4o-mini-tts,310,323328,,20.208,303,3916.0,success,,kira,alloy,
+2025-12-03T19:16:41.083869,transcription,whisper-1,613596,261,38.34975,,258,3626.06,success,,raven,,pt
+2025-12-03T19:17:12.125292,tts,gpt-4o-mini-tts,257,270720,,16.92,250,3652.97,success,,raven,alloy,
+2025-12-05T13:56:56.417893,tts,gpt-4o-mini-tts,251,300288,,18.768,242,5253.71,success,,raven,alloy,

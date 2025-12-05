@@ -1,5 +1,16 @@
 {
-  "life": [],
+  "life": [
+    {
+      "title": "Kira Ashfall",
+      "summary": "Kira é ágil, irreverente, inteligente e criativa, sempre animada e expressiva, com o objetivo de criar mapas seguros de telhados e becos entre Muldraugh e West Point, manter o moral do grupo e provar que ainda pode salvar alguém.",
+      "metadata": {
+        "source": "dialogue",
+        "confidence": 0.9,
+        "evidence": "Ágil, Irreverente, Inteligente, Criativa, Extrovertida mesmo com medo; Objetivos: Criar mapas seguros de telhados e becos entre Muldraugh e West Point, Manter o moral do grupo mesmo quando tudo parece perdido, Provar para si mesma que ainda consegue salvar alguém"
+      },
+      "last_updated": "2025-12-03T22:05:59.489013+00:00"
+    }
+  ],
   "people": [
     {
       "title": "Ezra",
